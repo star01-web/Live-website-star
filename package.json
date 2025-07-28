@@ -1,0 +1,51 @@
+{
+  "name": "multiventure-web",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "generate:sitemap": "node generate-sitemap.js",
+    "build": "npm run generate:sitemap && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+    
+  },
+  "dependencies": {
+    "@fontsource/playfair-display": "^5.2.6",
+    "@fontsource/roboto": "^5.2.6",
+    "@fontsource/source-code-pro": "^5.2.6",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/vite": "^4.0.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "framer-motion": "^12.18.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-facebook-pixel": "^1.0.4",
+    "react-ga4": "^2.1.0",
+    "react-helmet-async": "^2.0.5",
+    "react-icons": "^5.5.0",
+    "react-medium-image-zoom": "^5.2.14",
+    "react-router-dom": "^7.2.0",
+    "react-slick": "^0.30.3",
+    "reactflow": "^11.11.4",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "postcss": "^8.5.6",
+    "sitemap": "^8.0.0",
+    "tailwindcss": "^4.1.10",
+    "vite": "^6.3.5",
+    "vite-plugin-svgr": "^4.3.0"
+  }
+}

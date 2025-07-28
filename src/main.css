@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ✅ */
+}
+
+
+/* home page styling */
+.custom-responsive h1 {
+    position: absolute; 
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -36%);
+    width: 100%;
+    text-align: center;
+}
+.custom-responsive button {
+    position: absolute; 
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -36%);
+}
+
+@media (min-width: 285px) and (max-width: 639px) {
+    .custom-responsive video {
+        top: 23%;
+        width: 100%;
+        position: relative; 
+    }
+}
+@media (min-width: 285px) and (max-width: 639px) {
+    .custom-responsive h1 {
+        top: 40%;
+        width: 100%;
+        text-align: left;
+        position: relative; 
+    }
+}
+@media (min-width: 285px) and (max-width: 639px) {
+    .custom-responsive button {
+        top: 26%;
+        /* width: 100%; */
+        position: relative; 
+    }
+}
+
+
+@media (min-width: 285px) and (max-width: 790px) {
+    .blog-responsive {
+        padding-top: 30%;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1363px) {
+    .custom-responsive h1 {
+        top: 36%;
+        width: 100%;
+        position: relative; 
+    }
+    .custom-responsive button {
+        top: 36%;
+
+        position: relative; 
+    } 
+
+}
+
+
+/* About Section  */
+@media (min-width: 1024px) and (max-width: 1350px) {
+  .px-4 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+/* team  section */
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  .team-responsive{
+   width: 100%;
+  }
+}
+
+
+
+/* our project */
+@media (min-width: 978px) and (max-width: 1700px) {
+    .responsive-project {
+      position: relative; 
+      top: 5vh; 
+      padding-bottom: 5vh;
+    }
+  }
+  
+  @media (min-width: 550px) and (max-width: 977px) {
+    .responsive-project {
+      position: relative; 
+      top: 8vh; 
+      padding-bottom: 8vh;
+  }}
+  @media (min-width: 449px) and (max-width: 549px) {
+    .responsive-project {
+      position: relative; 
+      top: 8vh; 
+      padding-bottom: 8vh;
+  }}
+  @media (min-width: 357px) and (max-width: 448px) {
+    .responsive-project {
+      position: relative; 
+      top: 5vh; 
+      padding-bottom: 5vh;
+  }}
+  @media (min-width: 285px) and (max-width: 448px) {
+    .responsive-project {
+      position: relative; 
+      top: 18vh; 
+      padding-bottom: 18vh;
+  }}
+
+
+  /* FAQBlog Section  */
+
+  /* Media Query for small screens (mobile) */
+@media (max-width: 1023px) {
+    .faqblog-responsive {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  /* Media Query for medium screens (side by side layout) */
+  @media (min-width: 1024px) and (max-width: 1350px) {
+    .faqblog-responsive {
+        padding: 14px;
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+        gap: 30px;
+    }
+  }
+  
+  @media (min-width: 1024px) and (max-width: 1350px) {
+    .faqblog-responsive button {
+        padding: 14px;
+    }
+  }
+  
+
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50% { border-color: black }
+}
+
+.animate-typewriter {
+  animation: typing 2.5s steps(30, end), blink 0.8s step-end 3;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+}
+
+
+/* svg map success story */
+svg path {
+  stroke: #4B5563; 
+  stroke-width: 1;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform-origin: center center;
+}
+
+svg path:hover {
+  fill: #e1b92c; 
+  transform: scale(1.03); 
+  stroke: #1e3a8a; 
+  stroke-width: 1.5;
+}
+
+@keyframes scrollVertical {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-vertical {
+  animation: scrollVertical 40s linear infinite;
+}
+.animate-scroll-vertical:hover {
+  animation-play-state: paused;
+}
+.button-floating{
+  margin-bottom: 56px;
+  margin-left: 16px;
+}
+
+@media (max-width: 635px) {
+  .button-floating {
+    display: none !important;
+  }
+}

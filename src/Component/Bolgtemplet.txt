@@ -1,0 +1,60 @@
+{
+    id: 1,
+    title: "",
+    image: "",
+    description:
+      "", 
+    point: [
+      {
+        info:
+          ""
+      },
+      { info1: "" },
+      { info2: "" },
+      { info3: "" },
+      { info4: "" },
+      { info5: "" }, 
+      { info6: "" },
+      { info7: "" },
+      { info8: "" } 
+    ],
+    writer: "Farnaz Sheikh",
+    date: "10/05/2025",
+    toc: [
+      {
+        id: "",
+        title: "",
+        subItems: ["", "", ""] 
+      },
+      {
+        id: "",
+        title: "",
+        subItems: ["", ""]
+      },
+      {
+        id: "",
+        title: "",
+        subItems: ["", ""]
+      }
+    ],
+    contentSections: [
+      {
+        id: "",
+        heading: "",
+        content:
+          "<p></p>"
+      },
+      {
+        id: "", 
+        heading: "",
+        content:
+          "<p></p>"
+      },
+      {
+        id: "",
+        heading: "",
+        content:
+          "<p></p>"
+      }
+    ]
+  }, 
