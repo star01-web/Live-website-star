@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Optimized base styles */
+html{scroll-behavior:smooth}
+:root{--title-text:'Montserrat',sans-serif;--body-text:'Inter',sans-serif}
+.slick-slide>div{margin:0 10px}
+.button-primary{background-color:#3490dc;color:white;padding:10px 20px;border-radius:5px;text-align:center;display:inline-block;cursor:pointer}
+.scrollbar-hide::-webkit-scrollbar{display:none}
+.scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none}

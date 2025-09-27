@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Star Multiventure Pvt. Ltd.",
+  "url": "https://www.starsupplierss.com",
+  "logo": "https://www.starsupplierss.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/starmultiventure"
+  ],
+  "description": "Leading manufacturer of fish farming cages, HDPE pontoons, and floating jetties in India",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service"
+  }
+}

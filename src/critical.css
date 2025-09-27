@@ -1,0 +1,197 @@
+/* Critical CSS for Above-the-fold Content - Improves LCP */
+
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Hero section critical styles */
+.hero-container {
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  height: 300px;
+}
+
+@media (min-width: 640px) {
+  .hero-container {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    height: 900px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-container {
+    height: 1100px;
+  }
+}
+
+/* Hero image - critical for LCP */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Hero overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+@media (min-width: 640px) {
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-overlay {
+    padding: 2.5rem;
+  }
+}
+
+/* Hero title */
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 3.75rem;
+  }
+}
+
+/* Hero button */
+.hero-button {
+  background-color: #f59e0b;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (min-width: 640px) {
+  .hero-button {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+.hero-button:hover {
+  background-color: #d97706;
+}
+
+/* Navigation critical styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Loading spinner */
+.loading-spinner {
+  position: fixed;
+  inset: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid #3b82f6;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ensure fonts load properly */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter Regular'), local('Inter-Regular');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold');
+}
