@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
 import AboutUsSchema from "./AboutUsSchema"
+import SeoSchema from './SeoSchema';
 function AboutUs() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
-    <><AboutUsSchema />
+    <>\
+    {/* <AboutUsSchema /> */}
+    <SeoSchema/>
     <div className="mt-2 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 text-justify text-gray-800">
       {/* About Us */}
       <section className="mb-10">

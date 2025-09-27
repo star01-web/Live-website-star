@@ -24,7 +24,7 @@ const Navbar = () => {
     { to: '/services', label: 'Services' },
     // { to: '/ourproject', label: 'Projects' },
     { to: '/gallery', label: 'Gallery' },
-    { to: '/blog', label: 'Blog' },
+    { to: '/blogs', label: 'Blogs' },
     {to:'/success-story', label: 'Success Story'},
     { to: '/contactus', label: 'Contact Us' },
 
@@ -41,18 +41,24 @@ const Navbar = () => {
       <Link to="/">
         <img
           src="/Logo02.svg"
-          alt="Logo"
+          alt="Star Multiventure Logo"
           className="h-[130px] w-auto mt-12 transition-all duration-300"
+          loading="eager"
+          width="200"
+          height="130"
         />
       </Link>
     </div>
 
     {/* Hamburger Menu */}
     <button
-      className="text-white text-2xl xl:hidden"
+      className="text-white text-2xl xl:hidden focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2 focus:ring-offset-gray-800 rounded-md p-2"
       onClick={() => setIsMenuOpen(!isMenuOpen)}
+      aria-expanded={isMenuOpen}
+      aria-controls="mobile-menu"
+      aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
     >
-      <AiOutlineMenu />
+      <AiOutlineMenu aria-hidden="true" />
     </button>
 
     {/* Desktop Navigation */}
@@ -72,27 +78,38 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="bg-gray-900 fixed top-0 left-0 w-full h-screen z-50 flex flex-col items-center text-xl overflow-y-auto transition-all duration-100">
+          <div 
+            id="mobile-menu"
+            className="bg-gray-900 fixed top-0 left-0 w-full h-screen z-50 flex flex-col items-center text-xl overflow-y-auto transition-all duration-100"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mobile-menu-title"
+          >
+            <h2 id="mobile-menu-title" className="sr-only">Navigation Menu</h2>
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="absolute top-4 right-4 text-white text-3xl p-1"
+              className="absolute top-4 right-4 text-white text-3xl p-1 focus:outline-none focus:ring-2 focus:ring-yellow-500 rounded-md"
+              aria-label="Close navigation menu"
             >
-              <MdClose />
+              <MdClose aria-hidden="true" />
             </button>
 
-            <ul className="flex flex-col space-y-6 text-center mt-20">
-              {navLinks.map(({ to, label }) => (
-                <li key={to}>
-                  <Link
-                    to={to}
-                    className="text-gray-300 hover:text-yellow-400"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <nav aria-label="Mobile navigation">
+              <ul className="flex flex-col space-y-6 text-center mt-20" role="menubar">
+                {navLinks.map(({ to, label }) => (
+                  <li key={to} role="none">
+                    <Link
+                      to={to}
+                      className="text-gray-300 hover:text-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:text-yellow-400 rounded-md px-4 py-2 block"
+                      onClick={() => setIsMenuOpen(false)}
+                      role="menuitem"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         )}
       </nav>

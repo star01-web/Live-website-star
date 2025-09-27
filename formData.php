@@ -1,35 +1,48 @@
 <?php
-// Error Reporting (enable during dev)
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+// Disable error reporting in production for better performance
+ini_set('display_errors', 0);
+ini_set('display_startup_errors', 0);
+error_reporting(0);
 
-// Headers for CORS and JSON
+// Set output buffering and compression for faster response
+ob_start('ob_gzhandler');
+
+// Performance headers first
+header("Content-Type: application/json; charset=utf-8");
+header("Cache-Control: no-cache, must-revalidate");
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Access-Control-Allow-Methods: POST");
-header("Content-Type: application/json");
+header("Access-Control-Max-Age: 3600");
 
-// Database credentials
+// Only allow POST - fail fast
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    http_response_code(405);
+    echo json_encode(["status" => "error", "message" => "Method not allowed"]);
+    exit;
+}
+
+// Database credentials with connection optimization
 $host = "62.72.28.206";
 $db   = "u976065191_Formdata";
 $user = "u976065191_Star8959";
 $pass = "Ashiq8959";
 
-// Connect to MySQL
+// Optimized MySQL connection with timeout settings
+mysqli_report(MYSQLI_REPORT_OFF); // Disable mysqli warnings for performance
 $conn = new mysqli($host, $user, $pass, $db);
+
+// Set connection timeout and charset for performance
 if ($conn->connect_error) {
     http_response_code(500);
-    echo json_encode(["status" => "error", "message" => "Database connection failed."]);
+    echo json_encode(["status" => "error", "message" => "Service temporarily unavailable"]);
     exit;
 }
 
-// Only allow POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    http_response_code(405);
-    echo json_encode(["status" => "error", "message" => "Invalid request method."]);
-    exit;
-}
+// Set charset and connection options for performance
+$conn->set_charset("utf8mb4");
+$conn->options(MYSQLI_OPT_CONNECT_TIMEOUT, 5);
+$conn->options(MYSQLI_OPT_READ_TIMEOUT, 5);
 
 // Get form data as JSON
 $data = json_decode(file_get_contents("php://input"), true);

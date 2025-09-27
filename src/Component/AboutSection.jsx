@@ -6,7 +6,7 @@ export default function AboutSection() {
     <div className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-6 md:px-16 py-8 sm:py-12 bg-gradient-to-r from-white to-gray-100">
       {/* Left Content */}
       <div className="w-full md:w-1/2 text-left">
-        <h1 className="text-yellow-500 font-semibold text-xl sm:text-md uppercase tracking-wide hover:scale-y-100 hover:text-yellow-500 relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-yellow-500 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Who We Are</h1>
+        <h2 className="text-yellow-500 font-semibold text-xl sm:text-md uppercase tracking-wide hover:scale-y-100 hover:text-yellow-500 relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-yellow-500 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">Who We Are</h2>
         <h2 className="text-2xl sm:text-3xl md:text-3xl font-bold text-gray-900 mt-2 leading-snug">
           Your Trusted Partner in Advancing Aquaculture Excellence
         </h2>
@@ -33,7 +33,7 @@ export default function AboutSection() {
 
   {/* Video */}
   <video
-    src="/FishUnderWater.mp4"
+    src="/FishUnderWater.webm"
     alt="Fish farming cage"
     className="relative w-[250px] sm:w-[300px] md:w-[350px] lg:w-[450px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[450px] shadow-3xl border-[8px] border-yellow-500 rounded-3xl object-cover z-10 transition-transform duration-300 hover:scale-105"
     autoPlay

@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import testimonials from "../Component/StateProjectData";
-
 function AchievementsTestimonials() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [expandedIndexes, setExpandedIndexes] = useState([]);
@@ -20,7 +19,7 @@ function AchievementsTestimonials() {
   };
 
   const sliderSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 800,
     slidesToShow: 3,
@@ -47,8 +46,12 @@ function AchievementsTestimonials() {
     centerPadding: "0",
   };
 
-  const handleImageClick = (image) => {
-    setSelectedImage(image);
+  const handleImageClick = (src) => {
+    if (src === "/Trust-Seal.webp") {
+      setSelectedImage("/Indiamart.webp");
+    } else {
+      setSelectedImage(src);
+    }
   };
 
   const handleClosePreview = () => {
@@ -70,9 +73,9 @@ function AchievementsTestimonials() {
   return (
     <div>
       <section className="text-center py-12 bg-gradient-to-b from-white to-gray-100">
-        <h1 className="text-yellow-500 font-semibold text-md uppercase tracking-wide relative inline-block">
+        {/* <h1 className="text-yellow-500 font-semibold text-md uppercase tracking-wide relative inline-block"> */}
           {/* <Link to="/">Achievement</Link> */}
-        </h1>
+        {/* </h1> */}
         <br />
         <h2 className="text-3xl md:text-4xl font-bold text-black-500 mt-2 hover:text-black relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-black before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
           Award & Recognition
@@ -81,15 +84,17 @@ function AchievementsTestimonials() {
         <div className="w-full mt-8">
           <div className="flex flex-wrap justify-center gap-9">
             {[
-              "/isologo.png",
-              "/nfdblogo.png",
-              // Add more if needed
+              "/nfdblogo.webp",
+             "/logo-optimized.webp",
+              "/Trust-Seal.webp",
+              // "/Indiamart.webp",
+              
             ].map((src, idx) => (
               <img
                 key={idx}
                 src={src}
                 alt={`Award ${idx}`}
-                className="w-60 h-52 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105 cursor-pointer"
+                className="w-50 h-42 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105 cursor-pointer"
                 onClick={() => handleImageClick(src)}
               />
             ))}
@@ -104,7 +109,7 @@ function AchievementsTestimonials() {
         >
           <div className="relative">
             <button
-              className="absolute top-2 right-3 text-white text-2xl hover:text-yellow-500"
+              className="absolute top-2 right-3 text-yellow-500 text-2xl hover:text-yellow-500"
               onClick={handleClosePreview}
             >
               X
@@ -155,7 +160,7 @@ function AchievementsTestimonials() {
                   className="text-blue-600 text-sm font-medium mt-2 hover:underline block"
                   type="button"
                 >
-                  {expandedIndexes === index ? "See Less" : "See More"}
+                  {isExpanded ? "See Less" : "See More"}
                 </button>
               )}
                       </div>

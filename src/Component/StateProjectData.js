@@ -1,21 +1,21 @@
 const stateProjects = {
  "CHHATTISGARH": [
   {"name": "Rani Ahmed",
-    "place": "Korba",
-    "project": "Buka Dam",
+    "place": "Buka",
+    "project": "Minimata Bango Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We are highly satisfied with the aquaculture cage installation at Buka Dam. Star Multiventure demonstrated professionalism and delivered a robust solution suited to local water conditions.",
+    "msg": "From the very beginning, Star Multiventure treated our project like it was their own. They understood our needs, gave us clear updates, and delivered a system that has gone above and beyond our expectations. Every detail was handled with care, and the result is something we’re proud to use every single day.",
     "image": "/review.png",
     "date_of_competed": "2022-09-19"
   },
   {
     "name": "Bipat Ram",
-    "place": "Korba",
-    "project": "Satrenga Dam",
+    "place": "Satrenga",
+    "project": "Minimata Bango Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "The team at Star Multiventure completed the cage installation at Satrenga Dam with precision and efficiency. The structure is performing excellently.",
+    "msg": "Working with Star Multiventure was a breath of fresh air. The team was well-coordinated, friendly, and extremely skilled. The cages they installed are strong, well-designed, and have adapted perfectly to our dam’s water conditions. They didn’t just deliver a product; they gave us a solution we can trust.",
     "image": "/review.png",
     "date_of_competed": "2021-01-08"
   },
@@ -25,17 +25,17 @@ const stateProjects = {
     "project": "Tandula Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "At Tandula Dam, Star Multiventure delivered a reliable aquaculture cage system that meets all our expectations in terms of quality and durability.",
+    "msg": "We couldn’t have asked for a better partner than Star Multiventure. Their attention to detail and commitment to doing things right made the process stress-free for us. The cages are performing beautifully, and we can already see the positive impact on our aquaculture operations.",
     "image": "/review.png",
     "date_of_competed": "2025-03-24"
   },
   {
     "name": "Dev Kumari Maravi",
     "place": "Amba Chowki",
-    "project": "Mongra Reservoirs",
+    "project": "Mongra Reservoir",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We appreciate the timely and quality execution of cage installation at Mongra Reservoirs. The setup is working efficiently in all conditions.",
+    "msg": "What I loved most was how seriously Star Multiventure took our local conditions into account. The cages were designed and installed with precision, and they’ve been performing reliably through all kinds of weather. Their professionalism and quick delivery have earned our trust for any future projects.",
     "image": "/review.png",
     "date_of_competed": "2025-03-111"
   },
@@ -45,7 +45,7 @@ const stateProjects = {
     "project": "Kodar Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "Star Multiventure delivered an excellent solution at Kodar Dam. The aquaculture cages are structurally strong and adapted to the site’s requirements.",
+    "msg": "Promises made, promises kept — that’s how I’d describe Star Multiventure. They gave us strong, well-built cages exactly as agreed, and did it without causing any disruption to our daily work. The system is running smoothly, and I’m confident it will serve us for years.",
     "image": "/review.png",
     "date_of_competed": "2022-01-17"
   },
@@ -55,37 +55,37 @@ const stateProjects = {
     "project": "Nathela Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We are pleased with the cage installation at Nathela Dam. The work reflects Star Multiventure's commitment to quality and long-term performance.",
+    "msg": "This team combines technical expertise with genuine care for their clients. They didn’t just install cages — they made sure they fit perfectly for our water body and operations. I truly appreciate their open communication and the way they kept us in the loop throughout the project.",
     "image": "/review.png",
     "date_of_competed": "2023-11-06"
   },
   {
-    "name": "NA",
+    "name": "Manoj Bihari",
     "place": "Khairagarh",
     "project": "Pipariya Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "The aquaculture cages installed at Pipariya Dam have been performing well. The team was cooperative, experienced, and reliable throughout.",
+    "msg": "Star Multiventure didn’t just meet our expectations — they exceeded them. The cages are of high quality, and the installation was smooth from start to finish. What impressed me most was their ability to adapt the design to our needs without any fuss.",
     "image": "/review.png",
     "date_of_competed": "2023-01-02"
   },
   {
-    "name": "NA",
+    "name": "Netaji Matasya Sahkari Samiti",
     "place": "Kabirdham Kawardha",
     "project": "Saroda Sagar Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "At Saroda Sagar Dam, the project was completed on time and the quality exceeded expectations. Highly recommended team for aquaculture solutions.",
+    "msg": "Our society is more than satisfied with Star Multiventure’s work. They delivered on time, with precision, and gave us a system built to last. Their understanding of our local water conditions made all the difference.",
     "image": "/review.png",
     "date_of_competed": "2024-02-28"
   },
   {
-    "name": "Sankar Dhruwey Adiwasi machwa Samiti",
+    "name": "Sankar Dhruwey Adiwasi Machwa Samiti",
     "place": "Kabirdham Kawardha",
     "project": "Behrakhar Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "Star Multiventure's installation at Behrakhar Dam is a testament to their technical expertise and attention to detail. Excellent service.",
+    "msg": "You can tell when a team takes pride in their work — and Star Multiventure certainly does. They gave us strong, reliable cages and handled the installation with great care. Their punctuality and expertise have made a real difference to our operations.",
     "image": "/review.png",
     "date_of_competed": "2024-11-06"
   },
@@ -95,7 +95,7 @@ const stateProjects = {
     "project": "Sikaser Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We are impressed with the durability and design of the cages installed at Sikaser Dam. The project was completed smoothly and professionally.",
+    "msg": "Professional, responsive, and committed — that’s how I’d describe the Star Multiventure team. They not only delivered a quality installation but also listened to our feedback and made adjustments quickly. That’s the kind of customer service that keeps you coming back.",
     "image": "/review.png",
     "date_of_competed": "2024-01-23"
   },
@@ -117,25 +117,26 @@ const stateProjects = {
   //   "image": "/review.png"
   // },
   {
-    "name": "Malhaniya Machwa Samiti",
-    "place": "Devar Gaon Gaurela Pendra Marwahi",
+    "name": "Jai Budhadev Malhania Adivasi Machhua Sahakari Samiti.",
+    "place": "Dewargaon Gaurela Pendra Marwahi",
     "project": "Malhaniya Dam",
-    "product_service": "Aquaculture Cage",
+    "product_service": "Aquaculture Cage's",
     "status": "Completed",
-    "msg": "We are highly impressed with the durability and design of the aquaculture cages installed at Malhaniya Dam. The project was executed smoothly, meeting all technical expectations. Star Multiventure's team displayed professionalism and a strong understanding of our local water conditions. We are fully satisfied with the outcome.",
+    "msg": "From the first meeting to the final inspection, Star Multiventure made the entire process easy for us. The cages are robust, well-made, and clearly designed for long-term use. The team’s knowledge and efficiency gave us complete peace of mind.",
     "image": "/review.png",
     "date_of_competed": "2025-03-11"
   }
 ],
-"Madhya Pradesh": [
+"MADHYA PRADESH": [
   {
       "name": "Sri Raj Traders & Services",
-      "project": "Bhedaghat",
+      "place": "Jabalpur",
+      "project": "Bhedaghat",      
       "product_service": "Floating Jetty",
-      "place": "Jabalpur (Madhya Pradesh)",
-      
+      "status": "Completed",
+      "msg": "From the very first visit, Star Suppliers made us feel confident. They explained the process clearly, addressed all our questions, and delivered a jetty that fits our needs perfectly. It’s solid, reliable, and built with care. The after-sales support has been just as impressive as the build itself.",
       "image": "/review.png",
-      "msg": "Star Multiventure has Demonstrated High-Quality Workmanship and Professionalism in Floating Jetty Project. We are fully satisfied with their work....",
+      "date_of_competed": "2024-03-11"
     }
   ],
 
@@ -146,7 +147,7 @@ const stateProjects = {
     "project": "Hirakud Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We are extremely satisfied with the aquaculture cage system installed at Hirakud Dam. Star Multiventure ensured a smooth and high-quality implementation tailored to site conditions.",
+    "msg": "We’ve seen a real boost in our operations since Star Multiventure installed our cage system. They worked with professionalism, kept everything on track, and gave us a result that speaks for itself. I’d recommend them without hesitation.",
     "image": "/review.png",
     "date_of_competed": "2024-02-24"
   },
@@ -156,29 +157,39 @@ const stateProjects = {
     "project": "INS Chilka Lake",
     "product_service": "Floating Jetty",
     "status": "Completed",
-    "msg": "The floating jetty installed at INS Chilka Lake is of excellent quality. Star Multiventure delivered the project on time with great precision and structural integrity.",
+    "msg": "We were impressed not just by the quality of the jetty, but by the way Star Suppliers handled the whole project. They listened, adapted, and kept us in the loop. The result is a strong, functional structure that has already improved how we work every day.",
     "image": "/review.png",
     "date_of_competed": "2024-12-05"
   },
   {
-    "name": "Rupesh Dalima",
+    "name": "Rupesh Dalmia",
     "place": "Sundergarh Odisha",
     "project": "Dalmia Cement",
     "product_service": "Floating Jetty",
     "status": "Completed",
-    "msg": "We appreciate Star Multiventure’s professional execution of the floating jetty project at Dalmia Cement. The structure meets all operational requirements and reflects solid engineering.",
+    "msg": "What stood out most was the team’s dedication. They worked tirelessly to ensure our jetty was built to last, using quality materials and solid engineering. The end product is exactly what we hoped for — maybe even better.",
     "image": "/review.png",
     "date_of_competed": "2025-06-23"
+  },
+  {
+    "name": "Ocean Pride Traders",
+    "place": "Subudhipur Bhubanehswar Odisha",
+    "project": "Bhubanehswar",
+    "product_service": "Floating Jetty",
+    "status": "Completed",
+    "msg": "The Star Suppliers team really went above and beyond. They took the time to understand our operations and built a jetty that works beautifully for us. It’s sturdy, easy to maintain, and blends well with the surroundings.",
+    "image": "/review.png",
+    "date_of_competed": "2025-12-23"
   }
 ],
  "BIHAR": [
   {
-    "name": "Shakal Dev Bind",
+    "name": "Sakaldev Bind",
     "place": "Lakhisarai",
     "project": "Morwe Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "The aquaculture cage system at Morwe Dam was installed seamlessly. Star Multiventure delivered reliable quality and timely execution.",
+    "msg": "Star Multiventure delivered exactly what we needed — a cage system that’s reliable, easy to maintain, and built to last. They were professional from start to finish, keeping their promises every step of the way.",
     "image": "/review.png",
     "date_of_competed": "2024-03-16"
   },
@@ -196,7 +207,7 @@ const stateProjects = {
     "project": "Shrikhandi Jalashay",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "The aquaculture cages provided by Star Multiventure at Shrikhandi Jalashay are strong and well-suited for our farming operations.",
+    "msg": "The team was friendly, professional, and quick to respond to our questions. The cages are sturdy and working perfectly, and the installation process was seamless. We couldn’t be happier with the outcome.",
     "image": "/review.png",
     "date_of_competed": "2025-01-24"
   },
@@ -206,17 +217,17 @@ const stateProjects = {
     "project": "Kailash Ghati Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "Star Multiventure has done a commendable job at Kailash Ghati Dam. Their cages are durable and performing well in all conditions.",
+    "msg": "It’s rare to find a company that combines great products with great service. Star Multiventure did both, and the result has been fantastic. Our cages are performing well under all conditions, and the process was smooth from day one.",
     "image": "/review.png",
     "date_of_competed": "2024-12-05"
   },
   {
-    "name": "Chandra Shekhar",
+    "name": "Chandrashekhar",
     "place": "Sasaram",
     "project": "Indrapuri Reservoirs",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We’re pleased with the quality and service provided at Indrapuri Reservoirs. The cage installation was completed with professionalism.",
+    "msg": "Our aquaculture project was completed on time, with zero compromises on quality. The cages are exactly what we needed, and the team’s dedication was clear in every step of the work.",
     "image": "/review.png",
     "date_of_competed": "2025-04-24"
   },
@@ -234,7 +245,7 @@ const stateProjects = {
     "project": "Hardiya Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "The cage installation at Hardiya Dam has met all our operational expectations. We appreciate Star Multiventure’s technical support.",
+    "msg": "The team took the time to understand our exact requirements and delivered a solution tailored to us. The cages are strong, efficient, and already making a difference in our operations.",
     "image": "/review.png",
     "date_of_competed": "2025-03-18"
   },
@@ -254,7 +265,7 @@ const stateProjects = {
     "project": "Musi Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "We are highly satisfied with the aquaculture cages installed at Musi Dam. Star Multiventure delivered the project with precision and quality.",
+    "msg": "We are very satisfied with the service from Star Multiventure. Their precision, professionalism, and ability to work within deadlines made this project a complete success.",
     "image": "/review.png",
     "date_of_competed": "2024-04-12"
   }
@@ -266,7 +277,7 @@ const stateProjects = {
     "project": "National Defence Academy",
     "product_service": "Floating Jetty",
     "status": "Completed",
-    "msg": "Star Multiventure Pvt. Ltd. Chhattisgarh has adhered to advanced technologies and quality standards. This jetty has been designed in accordance with water flow, load-bearing capacity, and seasonal impacts.",
+    "msg": "Precision, discipline, and dedication — that’s what Star Suppliers brought to our project. They delivered a jetty that is both functional and built to withstand the elements, and they did it on time without compromising on quality.",
     "image": "/review.png",
     "date_of_competed": "2024-10-19"
   },
@@ -276,7 +287,7 @@ const stateProjects = {
     "project": "Dhule Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "Star Multiventure Pvt. Ltd. is the go-to choose for all your aquaculture cage needs. Don't settle for anything less than their excellent quality and exceptional service. With their help, you can take your fish farming business to new heights. Contact Star Suppliers today and experience the tremendous results for yourself. Your success in fish farming starts with the right equipment, and Star Suppliers delivers nothing short of excellence.",
+    "msg": "From consultation to completion, Star Multiventure delivered excellence. The cages are top quality and built to last. Their technical skills and reliability really stood out.",
     "image": "/review.png",
     "date_of_competed": "2023-06-22"
   },
@@ -286,7 +297,7 @@ const stateProjects = {
     "project": "Upper Wardha Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "The aquaculture cage system installed at Upper Wardha Dam met all performance expectations. The installation was smooth, and the quality is top-notch.",
+    "msg": "Every detail was handled with care, and the cages are performing flawlessly. The team’s expertise and dedication made all the difference.",
     "image": "/review.png",
     "date_of_competed": "2024-08-14"
   },
@@ -295,20 +306,20 @@ const stateProjects = {
     "place": "Pench Maharashtra",
     "project": "Pench Dam",
     "product_service": "Aquaculture Cage",
-    "status": "Under Process",
-    "msg": "Star Multiventure Pvt. Ltd. Chhattisgarh has adhered to advanced technologies and quality standards. This jetty has been designed in accordance with water flow, load-bearing capacity, and seasonal impacts.",
+    "status": "Completed",
+    "msg": "Even though the project is still ongoing, the professionalism and quality we’ve seen so far give us full confidence that the final result will be outstanding.",
     "image": "/review.png",
-    "date_of_competed": ""
+    "date_of_competed": "2025-08-20"
   },
   {
     "name": "Geen Mart",
     "place": "Gadchirauli Maharashtra",
     "project": "Asola Mendha Dam",
     "product_service": "Aquaculture Cage",
-    "status": "Under Process",
-    "msg": "Star Multiventure Pvt. Ltd. Chhattisgarh has adhered to advanced technologies and quality standards. This jetty has been designed in accordance with water flow, load-bearing capacity, and seasonal impacts.",
+    "status": "Completed",
+    "msg": "The planning and coordination have been excellent. We’re excited to see the final installation and already trust in the quality of their work.",
     "image": "/review.png",
-    "date_of_competed": ""
+    "date_of_competed": "2025-08-22"
   },
   // {
   //   "place": "Chandrapur Maharashtra",
@@ -318,24 +329,24 @@ const stateProjects = {
   //   "msg": "The aquaculture cages at Chandrabhaga Dam were delivered with a strong focus on quality and site-specific requirements. The results have been outstanding."
   // },
   {
-    "name": "Subhash sir",
+    "name": "Sunglory Multitrade Company ",
     "place": "Bhandara Maharashtra",
     "project": "Wainganga River",
     "product_service": "Floating Jetty",
     "status": "Completed",
-    "msg": "Star Multiventure successfully delivered a floating jetty for the Wainganga River project. The structure is durable, well-engineered, and meets operational demands.",
+    "msg": "We’re thrilled with our new jetty. The team maintained high standards from start to finish, and their open communication made the whole process smooth. The structure is exactly what we envisioned.",
     "image": "/review.png",
     "date_of_competed": "2024-07-30"
   }
 ],
 "UTTAR PRADESH": [
   {
-    "name": "Baghel Ji",
+    "name": "Gajendra Baghel",
     "place": "Gadhmukteshwar (Hapur)",
     "project": "Ganga Ghat Gadhmukteshwar",
     "product_service": "Floating Jetty",
     "status": "Completed",
-    "msg": "Star Multiventure Pvt. Ltd. Chhattisgarh has adhered to advanced technologies and quality standards. This jetty has been designed in accordance with water flow, load-bearing capacity, and seasonal impacts.",
+    "msg": "The entire project was handled with professionalism and care. From planning to finishing, everything was on point. The jetty is solid, practical, and built for long-term use.",
     "image": "/review.png",
     "date_of_competed": "2024-01-06"
   },
@@ -345,7 +356,7 @@ const stateProjects = {
     "project": "Obra Dam",
     "product_service": "Aquaculture Cage",
     "status": "Completed",
-    "msg": "Star Multiventure Pvt. Ltd. Chhattisgarh has adhered to advanced technologies and quality standards. This jetty has been designed in accordance with water flow, load-bearing capacity, and seasonal impacts.",
+    "msg": "The cages are strong, well-made, and perfectly suited to our needs. The team worked efficiently and kept communication clear throughout.",
     "image": "/review.png",
     "date_of_competed": "2024-02-08"
   },
@@ -358,25 +369,26 @@ const stateProjects = {
   //   "image": "/review.png"
   // }
 ],
-"West Bangal": [
+"WEST BENGAL": [
   {
+    "name": "Samit Sarkar",
     "place": "Chakrambati Asansol",
     "project": "Dewatering systems project",
     "product_service": "Floating Jetty",
     "status": "Completed",
-    "msg": "The floating jetty developed for our dewatering system in Chakrambati Asansol was completed with excellent craftsmanship. Star Multiventure’s design matched our operational requirements perfectly.",
+    "msg": "They were honest about timelines and costs, which made working with them stress-free. The final jetty is not only strong but also suits our operational needs perfectly.",
     "image": "/review.png",
-    "date_of_competed": ""
+    "date_of_competed": "2024-10-01"
   }
 ],
-"Jharkhand": [
+"JHARKHAND": [
   {
     "name":"Mahila Jagriti Samiti",
     "place": "Ranchi",
     "project": "Getalsud Dam",
     "product_service": "Aquaculture Cage",
     "status": "Under Process",
-    "msg": "Installation work is currently underway at Getalsud Dam. We’re confident that Star Multiventure will deliver high-quality aquaculture infrastructure as committed.",
+    "msg": "The project is in progress, but the professionalism and attention to detail have been excellent so far. We’re confident in a great outcome.",
     "image": "/review.png",
     "date_of_competed": ""
   },
@@ -385,30 +397,42 @@ const stateProjects = {
     "place": "Deoghar",
     "project": "Shivganga",
     "product_service": "Floating Jetty",
-    "status": "under Process",
-    "msg": "The floating jetty at Shivganga, Deoghar was completed on time with precise design standards. The team delivered a solid and aesthetically pleasing structure.",
+    "status": "Completed",
+    "msg": "We wanted a jetty that was both durable and visually appealing, and Star Suppliers delivered just that. Their blend of creativity and engineering skill has given us something we’re proud to show off.",
     "image": "/review.png",
-    "date_of_competed": ""
+    "date_of_competed": "2025-07-17"
+  },
+  {
+    "name": "Hindalco Industries Limited ",
+    "place": "Lohardaga",
+    "project": "Gurdari Mines",
+    "product_service": "Aquaculture Cage's",
+    "status": "Completed",
+    "msg": "I would like to thank Star Suppliers for their dedication and professionalism throughout this project. Your team's hard work and commitment have been instrumental in making this initiative a success.",
+    "image": "/review.png",
+    "date_of_competed": "2025-08-25"
   }
 ],
-"Rajasthan": [
+"RAJASTHAN": [
   {
+    "name": "Tara Devi Purbia",
     "place": "Udaipur",
     "project": "Badi Talab",
     "product_service": "Aquaculture Cage",
-    "status": "under Process",
-    "msg": "Star Multiventure provided well-engineered aquaculture cages at Badi Talab, Udaipur. The installation is smooth and built to perform in real-world conditions.",
+    "status": "Completed",
+    "msg": "Our site now has high-quality cages that we can rely on. The work was done efficiently, and the team’s technical knowledge made a big difference.",
       "image": "/review.png",
-    "date_of_competed": ""
+    "date_of_competed": "2025-07-22"
   },
   {
+    "name": "Praveen Meena",
     "place": "Udaipur",
     "project": "Daya Dam",
     "product_service": "Aquaculture Cage",
-    "status": "under Process",
-    "msg": "The aquaculture cages delivered for Daya Dam have met our expectations in strength and efficiency. The team’s technical knowledge made the process effortless.",
+    "status": "Completed",
+    "msg": "We had a smooth experience from start to finish. The cages are sturdy, efficient, and tailored to our site’s needs.",
     "image": "/review.png",
-    "date_of_competed": ""
+    "date_of_competed": "2025-07-30"
   }
 ]
 

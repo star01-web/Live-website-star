@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import BlogData from './blogSection';
 import BlogSchema from './BlogSchema';
 import { FaUser } from 'react-icons/fa';
+import SeoSchema from './SeoSchema';
 
 const BlogView = () => {
   const { slug } = useParams();
@@ -11,7 +12,8 @@ const BlogView = () => {
   const headingRefs = useRef({});
 
   function generateSlug(title) {
-    return title
+    const t = String(title || "");
+    return t
       .toLowerCase()
       .trim()
       .replace(/[^a-z0-9\s-]/g, '')
@@ -40,11 +42,20 @@ const BlogView = () => {
       { rootMargin: '-150px 0px -50% 0px', threshold: 0.1 }
     );
 
-    const elements = Object.values(headingRefs.current);
+    const elements = Object.values(headingRefs.current).filter(Boolean);
     elements.forEach(el => observer.observe(el));
 
     return () => {
-      elements.forEach(el => observer.unobserve(el));
+      elements.forEach(el => {
+        try {
+          observer.unobserve(el);
+        } catch (e) {
+          // ignore
+        }
+      });
+      try {
+        observer.disconnect();
+      } catch (e) {}
     };
   }, [blog]);
 
@@ -58,7 +69,7 @@ const BlogView = () => {
 
   return (
     <>
-      {blog && <BlogSchema blog={blog} />}
+      {blog && <SeoSchema blog={blog} />}
 
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 py-48 gap-8">
         {/* Left Section: Content */}
@@ -118,9 +129,9 @@ const BlogView = () => {
               </div>
             ))}
 
-            <p className="text-sm text-gray-600 font-bold mt-4">
+            <div className="text-sm text-gray-600 font-bold mt-4">
               <div className='flex space-x-5 text-black'><span><FaUser className="h-4 text-black"/></span> <span>{blog.meta.author} | {blog.meta.published_date}</span></div>
-            </p>
+            </div>
           </div>
         </div>
 

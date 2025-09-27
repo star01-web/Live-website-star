@@ -18,7 +18,7 @@ function Blog() {
   const navigate = useNavigate();
 
   const handlePostClick = (slug) => {
-    navigate(`/blog/${slug}`);
+    navigate(`/blogs/${slug}`);
     window.scrollTo(0, 0); 
   };
 
@@ -117,7 +117,7 @@ function Blog() {
 
           </div>
           <div className="text-center mt-6">
-            <Link to='/blog'>
+            <Link to='/blogs'>
               <button className="bg-black text-white px-6 py-2 rounded hover:bg-yellow-500 hover:text-black transition" >
                 More Blogs
               </button>
@@ -145,7 +145,7 @@ function Blog() {
 
         {/* FAQ Section */}
         <div className="flex-1 min-w-0">
-          <h1 className="text-center text-2xl font-bold text-black hover:text-black relative inline-block before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-black before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">FAQs</h1>
+          <h2 className="text-center text-2xl font-bold text-black hover:text-black relative inline-block before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-0 before:h-0.5 before:bg-black before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">FAQs</h2>
           <div className="mt-6 space-y-2">
             {faqs.map((faq, index) => (
               <div key={index}>

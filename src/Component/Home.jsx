@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Hero01 from "./Hero01";
-import AboutSection from "./AboutSection";
-import AchievementTestimonial from "./AchievementsTestimonials";
-import BlogsFAQs from "./BlogsFAQs";
 import '../main.css'
-import { Helmet } from "react-helmet-async"; 
+import { Helmet } from "react-helmet-async";
+import SeoSchema from "./SeoSchema";
+
+// Lazy load non-critical components
+const AboutSection = lazy(() => import("./AboutSection"));
+const AchievementTestimonial = lazy(() => import("./AchievementsTestimonials"));
+const BlogsFAQs = lazy(() => import("./BlogsFAQs"));
 const Home = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
   const [isFormVisible, setFormVisible] = useState(false);
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -42,8 +46,8 @@ const handleSubmit = async (e) => {
   const { name, email, phone, product, quantity, message } = formData;
 
   // ✅ Basic Validation
-  if (!name || !email || !phone) {
-    alert("⚠️ Please fill in Name, Email, and Phone.");
+  if (!name || !email || !phone ||!product ||!quantity ||!message) {
+    alert(" Please fill in Name, Email, and Phone.");
     return;
   }
 
@@ -79,7 +83,7 @@ const handleSubmit = async (e) => {
     try {
       result = await response.json(); // Try parsing JSON
     } catch (jsonError) {
-      const rawText = await responseClone.text(); // Fallback
+      const rawText = await responseClone.text(); 
       console.error(" Invalid JSON returned from server.");
       console.error(" Raw response:", rawText);
       alert("Something went wrong. Please try again later.");
@@ -123,14 +127,15 @@ const handleSubmit = async (e) => {
   return (
     <>
 {/* for SEO */}
-<Helmet>
+{/* <Helmet>
   <title>Buy Premium Aquaculture Fish Farming Cages, Aquaculture Sport, Water Tourism in India | Aquaculture Cage Experts &ndash; Star Multiventure</title>
-    {/* <link rel="canonical" href="https://starsupplierss.com/" /> */}
+   <link rel="preload" as="image" href="/kodar.webp" imagesrcset="/kodar-mobile.webp 600w, /kodar.webp 1200w" imagesizes="(max-width: 768px) 600px, 1200px"/>
+
   <meta name="description" content="Discover premium fish farming cages, HDPE pontoons & floating jetties by Star Multiventure – trusted across India for aquaculture solutions. Get a quote now!" />
-  <meta name="keywords" content="fish cage, fish feed, fish farming equipment, fish cage net, fish feed price, aerator for fish farming, floating fish feed, aquaculture tank for sale, buy tilapia, buy tilapia fish, aquaculture water pump, fishery aerator, buy tilapia fish online, aerator for fish pond price, buy tilapia online, online aquaculture courses, fish farming net price, net for fish farming, aquaculture equipment suppliers, fish cages for sale, fish breeding net, fish farm tank, fish watch, fish products, aquaculture supplies Australia, fish farm feed, aquaculture technology companies, fish pond plastic tank, candock cubes, buy pontoon boat, ramp dock, pond floats, boating toys, boat boxes, amazon boats, catamaran floating dock, boat fenders on sale, floating inflatable, floating pool boat, lake boat toys, engine boat price, dock supplies near me, drive on floating dock, boat dock supplies, modular dock systems, dock manufacturers, cheapest way to build a floating dock, boat dock supplies near me, floating boat lift systems, candock price, floating pontoon jetty, buy a dock, floating dock companies near me, floating pontoon cubes, commercial floating dock systems, floating pontoon price, best dock systems, floating jetty manufacturers in India, floating swimming platform, floating boat dock prices, boat items, floating dock river, dock flotation near me, boat and dock supplies, modular pontoon system, plastic floating boat, boat ramp lift, dock & marine construction, dock and marine, submersible pump floating pontoon, marina boats near me, boat to boat"/>
+  <meta name="keywords" content="premium aquaculture fish farming cages, HDPE pontoons floating jetties, Star Multiventure India, cage culture technology, aquaculture equipment suppliers, fish farming solutions" />
 
  
-  {/* Product Structured Data */}
+  
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -152,7 +157,7 @@ const handleSubmit = async (e) => {
     })}
   </script>
 
-  {/* FAQ Structured Data */}
+  
   <script type="application/ld+json">
     {JSON.stringify({
       "@context": "https://schema.org",
@@ -177,28 +182,41 @@ const handleSubmit = async (e) => {
       ],
     })}
   </script>
-</Helmet>
+</Helmet> */}
+<SeoSchema/>
 
 <section>
-      {/* VIDEO HERO SECTION */}
-<div className="relative w-screen overflow-hidden h-[300px] sm:h-[500px] md:h-[700px] lg:h-[900px] xl:h-[1100px] custom-responsive video">
-        <video
+      {/* OPTIMIZED VIDEO HERO SECTION */}
+<div className="relative w-screen overflow-hidden h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] xl:h-[950px] custom-responsive video">
+        {/* Optimized poster image for LCP */}
+        <img
+          src="/kodar.webp"
+          alt="Premium Aquaculture Fish Farming Cage - Star Multiventure"
           className="absolute top-0 left-0 w-full h-full object-cover"
+          loading="eager"
+          decoding="async"
+          fetchPriority="high"
+          width="1200"
+          height="600"
+          srcSet="/kodar.webp 1200w, /kodar-mobile.webp 600w"
+          sizes="(max-width: 768px) 600px, 1200px"
+          object-fit:cover
+        />
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
           autoPlay
           loop
           muted
+          alt="Premium Aquaculture Fish Farming Cage - Star Multiventure"
           playsInline
-          style={{ maxWidth: "100%", maxHeight: "100%" }}
-          preload="auto"
-          loading="lazy"
+          preload="metadata"
+          poster="/kodar.webp, /kodar-mobile.webp"
+          onCanPlay={(e) => {
+            e.target.style.opacity = '1';
+          }}
         >
+          <source src="/Web01.webm" type="video/webm" />
           <source src="/Web01.mp4" type="video/mp4" />
-          <img
-            src="/your-image.png"
-            alt="Aquaculture Farm"
-            className="w-full h-full object-cover"
-            loading="lazy"
-          />
         </video>
 
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-4 sm:p-6 md:p-10 bg-black/30">
@@ -239,64 +257,64 @@ const handleSubmit = async (e) => {
         </button>
         <h2 className="text-xl font-semibold mb-4">Request a Quote</h2>
 
-        <form onSubmit={handleSubmit}>
-          {["name", "email", "phone"].map((field) => (
-            <div key={field} className="mb-4">
-              <label className="block text-gray-700 mb-2 capitalize">
-                {field}
-              </label>
-              <input
-                type={field === "email" ? "email" : "text"}
-                name={field}
-                value={formData[field]}
-                onChange={handleChange}
-                placeholder={`Your ${field}`}
-                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-          ))}
+        <form onSubmit={handleSubmit} noValidate>
+          {["name", "email", "phone", "product", "quantity", "message"].map((field) => {
+            const fieldId = `home-form-${field}`;
+            return (
+              <div key={field} className="mb-4">
+                <label 
+                  htmlFor={fieldId}
+                  className="block text-gray-700 mb-2 capitalize font-medium"
+                >
+                  {field === "product" ? "Product Type" : field}
+                  {["name", "email", "phone"].includes(field) && (
+                    <span className="text-red-500 ml-1" aria-label="required">*</span>
+                  )}
+                </label>
 
-          <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Product</label>
-            <select
-              name="product"
-              value={formData.product}
-              onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="" disabled>
-                Select Product
-              </option>
-              <option value="Floating Jetty">Floating Jetty</option>
-              <option value="Circular Cage">Circular Cage</option>
-              <option value="HDPE Pontoon Cage">HDPE Pontoon Cage</option>
-            </select>
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Quantity</label>
-            <input
-              type="text"
-              name="quantity"
-              value={formData.quantity}
-              onChange={handleChange}
-              placeholder="Quantity"
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-
-          <div className="mb-4">
-            <label className="block text-gray-700 mb-2">Message</label>
-            <textarea
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Your Message"
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            />
-          </div>
-
+                {/* Conditional Dropdown for 'product' field */}
+                {field === "product" ? (
+                  <select
+                    id={fieldId}
+                    name={field}
+                    value={formData[field]}
+                    onChange={handleChange}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    aria-describedby={`${fieldId}-help`}
+                  >
+                    <option value="">Select a product</option>
+                    <option value="Floating Jetty">Floating Jetty</option>
+                    <option value="Cage Farming System">Cage Farming System</option>
+                    <option value="Floating Restaurant">Floating Restaurant</option>
+                    <option value="Pump Platform">Pump Platform</option>
+                    <option value="Custom Solution">Custom Solution</option>
+                  </select>
+                ) : (
+                  <input
+                    id={fieldId}
+                    type={field === "email" ? "email" : field === "phone" ? "tel" : field === "quantity" ? "number" : "text"}
+                    name={field}
+                    value={formData[field]}
+                    onChange={handleChange}
+                    placeholder={`Enter your ${field}`}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    required={["name", "email", "phone"].includes(field)}
+                    aria-describedby={`${fieldId}-help`}
+                    {...(field === "email" && { "aria-invalid": formData.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) })}
+                    {...(field === "phone" && { pattern: "[0-9]{10}", maxLength: 10 })}
+                    {...(field === "message" && { as: "textarea", rows: 3 })}
+                  />
+                )}
+                
+                {/* Help text */}
+                <div id={`${fieldId}-help`} className="text-xs text-gray-500 mt-1">
+                  {field === "email" && "We'll use this to send you updates"}
+                  {field === "phone" && "10-digit mobile number"}
+                  {field === "quantity" && "Number of units needed"}
+                </div>
+              </div>
+            );
+          })}
           <button
             type="submit"
             disabled={loading}
@@ -309,13 +327,144 @@ const handleSubmit = async (e) => {
     </motion.div>
   )}
 </AnimatePresence>
-
       {/* OTHER SECTIONS */}
       <Hero01 />
-      <AboutSection />
-      <AchievementTestimonial />
-      <BlogsFAQs />
+      <Suspense fallback={<div className="h-96 bg-gray-100 animate-pulse rounded-lg"></div>}>
+        <AboutSection />
+      </Suspense>
+      <Suspense fallback={<div className="h-96 bg-gray-100 animate-pulse rounded-lg"></div>}>
+        <AchievementTestimonial />
+      </Suspense>
+      
       </section>
+       {/* ENHANCED CONTENT SECTION WITH INTERNAL LINKS */}
+      <section className="bg-gradient-to-r from-blue-50 to-white py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              India's Leading Aquaculture Equipment Manufacturer
+            </h2>
+            <p className="text-md text-gray-700 leading-relaxed mb-8">
+              At Star Multiventure Pvt. Ltd., we don&apos;t just build HDPE fish farming cages, floating jetties, and pontoon systems — we build trust with every solution we deliver. With over 10 years of hands-on experience in the aquaculture space, we&apos;ve been working closely with fish farmers across India to make their operations more sustainable, efficient, and profitable. Our equipment is built to last, designed to thrive in tough marine conditions, and crafted to support the growing dreams of India&apos;s blue economy.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 ">
+              <Link to="/products" className="bg-[#f1b400] text-black  px-6 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300">
+                Explore Our Products
+              </Link>
+              <Link to="/services" className="bg-[#f1b400] text-black  px-6 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300">
+                Our Services
+              </Link>
+              <Link to="/contactus" className="bg-[#f1b400] text-black  px-6 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300">
+                Get Quote
+              </Link>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-lg shadow-md p-6 will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
+              <h2 className="text-xl font-semibold text-black mb-4">Premium Products</h2>
+              <p className="text-gray-700 mb-4">
+                Discover our comprehensive range of HDPE fish farming cages, floating jetties, and aquaculture accessories. 
+                All products are manufactured with premium-grade materials for maximum durability.
+              </p>
+              <Link to="/products" className="text-black hover:underline font-semibold">
+                View All Products →
+              </Link>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
+              <h2 className="text-xl font-semibold text-black mb-4">Expert Services</h2>
+              <p className="text-gray-700 mb-4">
+                From 24/7 customer support to on-site technical visits, we provide comprehensive services to ensure 
+                your aquaculture project's success with 5-year warranty coverage.
+              </p>
+              <Link to="/services" className="text-black hover:underline font-semibold">
+                Learn About Services →
+              </Link>
+            </div>
+            
+            <div className="bg-white rounded-lg shadow-md p-6 will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
+              <h2 className="text-xl font-semibold text-black mb-4">Success Stories</h2>
+              <p className="text-gray-700 mb-4">
+                Read about successful aquaculture projects across India and see how our equipment has helped 
+                farmers achieve remarkable results in fish farming operations.
+              </p>
+              <Link to="/success-story" className="text-black hover:underline font-semibold">
+                View Success Stories →
+              </Link>
+            </div>
+          </div>
+          
+          <div className="bg-white rounded-xl p-8 shadow-lg will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
+            <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Why Choose Star Multiventure?</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <span className="text-black text-2xl mr-3">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Premium HDPE Construction</h3>
+                    <p className="text-gray-600">UV-resistant, corrosion-proof materials built for marine environments</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-black text-2xl mr-3">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Nationwide Delivery</h3>
+                    <p className="text-gray-600">Serving aquaculture farms across all states of India</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-black text-2xl mr-3">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Expert Technical Support</h3>
+                    <p className="text-gray-600">24/7 customer service and on-site installation guidance</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <span className="text-black text-2xl mr-3">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">5-Year Warranty</h3>
+                    <p className="text-gray-600">Comprehensive warranty coverage on all HDPE products</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-black text-2xl mr-3">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Custom Solutions</h3>
+                    <p className="text-gray-600">Tailored equipment sizing and configuration for your needs</p>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <span className="text-black text-2xl mr-3">✓</span>
+                  <div>
+                    <h3 className="font-semibold text-gray-800">Proven Track Record</h3>
+                    <p className="text-gray-600">Over a decade of successful aquaculture installations</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-4 mt-8 md:flex-row">
+            <Link
+              to="/aboutus"
+              className="bg-[#f1b400] text-black px-8 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300"
+            >
+              Learn More About Us
+            </Link>
+            <Link
+              to="/gallery"
+              className="bg-[#f1b400] text-black px-8 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300"
+            >
+              View Our Projects
+            </Link>
+          </div>
+          </div>
+        </div>
+      </section>
+      <Suspense fallback={<div className="h-96 bg-gray-100 animate-pulse rounded-lg"></div>}>
+        <BlogsFAQs />
+      </Suspense>
     </>
   );
 };

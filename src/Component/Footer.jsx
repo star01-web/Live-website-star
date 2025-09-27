@@ -90,11 +90,11 @@ function Footer() {
     })}
   </script>
 </Helmet>
-    <footer className="bg-yellow-400 text-black py-5 w-full">
+    <footer className="py-5 w-full" style={{backgroundColor: '#fed80a', color: '#000000'}}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {/* Information Section */}
         <div>
-          <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Information</h3>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Information</h2>
           <ul className="space-y-2 sm:space-y-3 text-base sm:text-lg">
             <li className="font-semibold text-base sm:text-lg mt-2 sm:mt-4">Contact Number</li>
             {/* <li className="font-semibold text-base sm:text-lg mt-2 sm:mt-4">Email</li> */}
@@ -149,24 +149,51 @@ function Footer() {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-black mt-8 sm:mt-10 pt-4 sm:pt-6 flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6">
+      <div className="border-t mt-8 sm:mt-10 pt-4 sm:pt-6 flex flex-col sm:flex-row justify-between items-center px-4 sm:px-6" style={{borderTopColor: '#e6c200'}}>
         <p className="text-xs sm:text-sm text-center sm:text-left">
           © 2024 Stars Multiventure Pvt. Ltd. All Rights Reserved
         </p>
         <div className="flex space-x-4 sm:space-x-6 mt-4 sm:mt-0">
-          <Link to='https://www.facebook.com/star.multiventure' target="_blank" className="transition-all duration-300 ease-in-out hover:text-blue-800 hover:opacity-80 hover:scale-110">
+          <Link 
+            to='https://www.facebook.com/star.multiventure' 
+            target="_blank" 
+            className="text-gray-800 transition-all duration-300 ease-in-out hover:text-blue-900 hover:scale-110 hover:shadow-lg"
+            aria-label="Follow Star Multiventure on Facebook"
+          >
             <FaFacebook className="w-6 h-6 sm:w-7 sm:h-7 transition-all duration-300 ease-in-out" />
           </Link>
-          <Link to='https://www.youtube.com/@Starmultiventure' target='_blank' className="transition-all duration-300 ease-in-out hover:text-red-600 hover:opacity-80 hover:scale-110">
+          <Link 
+            to='https://www.youtube.com/@Starmultiventure' 
+            target='_blank' 
+            className="text-gray-800 transition-all duration-300 ease-in-out hover:text-red-800 hover:scale-110 hover:shadow-lg"
+            aria-label="Subscribe to Star Multiventure YouTube channel"
+          >
             <FaYoutube className="w-6 h-6 sm:w-7 sm:h-7 transition-all duration-300 ease-in-out" />
           </Link>
-          <Link to='https://www.instagram.com/star.multiventure/' target="_blank" className="transition-all duration-300 ease-in-out hover:text-red-500 hover:opacity-80 hover:scale-110">
+          <Link 
+            to='https://www.instagram.com/star.multiventure/' 
+            target="_blank" 
+            className="text-gray-800 transition-all duration-300 ease-in-out hover:text-pink-800 hover:scale-110 hover:shadow-lg"
+            aria-label="Follow Star Multiventure on Instagram"
+          >
             <FaInstagram className="w-6 h-6 sm:w-7 sm:h-7 transition-all duration-300 ease-in-out" />
           </Link>
-          <Link to='https://www.linkedin.com/company/105677765/' target="_blank" className="transition-all duration-300 ease-in-out hover:text-blue-700 hover:opacity-80 hover:scale-110">
+          <Link 
+            to='https://www.linkedin.com/company/105677765/' 
+            target="_blank" 
+            className="text-gray-800 transition-all duration-300 ease-in-out hover:text-blue-900 hover:scale-110 hover:shadow-lg"
+            aria-label="Connect with Star Multiventure on LinkedIn"
+          >
             <FaLinkedinIn className="w-6 h-6 sm:w-7 sm:h-7 transition-all duration-300 ease-in-out" />
           </Link>
-          <Link to='https://x.com/starsupplierss' target="_blank" className="transition-all duration-300 ease-in-out hover:text-white hover:opacity-80 hover:scale-110"> <BsTwitterX className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer transition-all duration-300 ease-in-out" /></Link>
+          <Link 
+            to='https://x.com/starsupplierss' 
+            target="_blank" 
+            className="text-gray-800 transition-all duration-300 ease-in-out hover:text-gray-900 hover:scale-110 hover:shadow-lg"
+            aria-label="Follow Star Multiventure on X (formerly Twitter)"
+          >
+            <BsTwitterX className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer transition-all duration-300 ease-in-out" />
+          </Link>
         </div>
       </div>
     </footer></>

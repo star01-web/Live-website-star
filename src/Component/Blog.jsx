@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import BlogData from './blogSection.js';
 import BlogSchema from './BlogSchema.jsx';
 import BlogCard from './BlogCard';
+import SeoSchema from './SeoSchema.jsx';
 
 const POSTS_PER_PAGE = 6;
 
@@ -12,9 +13,14 @@ function Blog() {
     window.scrollTo(0, 0);
   }, [currentPage]);
 
-  const totalPages = Math.ceil(BlogData.length / POSTS_PER_PAGE);
-  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
-  const currentPosts = BlogData.slice(startIndex, startIndex + POSTS_PER_PAGE);
+  // ✅ Sort by date: latest first
+  const sortedBlogData = [...BlogData].sort(
+    (a, b) => new Date(b.published_date) - new Date(a.published_date)
+  );
+
+  const totalPages = Math.ceil(sortedBlogData.length / POSTS_PER_PAGE);
+const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+const currentPosts = sortedBlogData.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
   const handlePageChange = (page) => {
     if (page >= 1 && page <= totalPages) {
@@ -24,7 +30,7 @@ function Blog() {
 
   return (
     <>
-      <BlogSchema blog={BlogData} />
+       <SeoSchema blog={sortedBlogData} />
 
       <div className="container mx-auto px-4 mt-40 mb-16">
         <h1 className="text-4xl font-bold text-center text-black mb-12">
@@ -53,7 +59,9 @@ function Blog() {
               key={i + 1}
               onClick={() => handlePageChange(i + 1)}
               className={`px-3 py-1 border rounded ${
-                currentPage === i + 1 ? "bg-black text-white" : "hover:bg-gray-100"
+                currentPage === i + 1
+                  ? "bg-black text-white"
+                  : "hover:bg-gray-100"
               }`}
             >
               {i + 1}

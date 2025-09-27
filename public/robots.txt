@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.starsupplierss.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin paths (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+Disallow: /api/
+
+# Allow important pages
+Allow: /
+Allow: /products
+Allow: /products/:slug
+Allow: /services  
+Allow: /aboutus
+Allow: /contactus
+Allow: /gallery
+Allow: /blogs
+Allow : /blogs/:slug
+Allow: /success-story

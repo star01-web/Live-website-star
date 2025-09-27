@@ -1,36 +1,41 @@
 {
   "name": "multiventure-web",
   "private": true,
-  "version": "2.0.0",
+  "version": "3.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "generate:sitemap": "node generate-sitemap.js",
-    "build": "npm run generate:sitemap && vite build",
+    "build": "vite build",
+    "build:analyze": "npm run build && npm run optimize",
     "lint": "eslint .",
-    "preview": "vite preview"
-    
+    "preview": "vite preview",
+    "optimize": "node optimize-images.js",
+    "perf-check": "npm run build && npm run optimize",
+    "bundle-analyze": "node analyze-bundle.js",
+    "lighthouse": "npm run build && npm run preview",
+    "test-performance": "node test-performance.js",
+    "test-build": "node test-build.js",
+    "test-cache": "node test-cache.js",
+    "analyze-js": "node analyze-unused-js.js",
+    "optimize-bundle": "npm run build && npm run analyze-js"
   },
   "dependencies": {
-    "@fontsource/playfair-display": "^5.2.6",
-    "@fontsource/roboto": "^5.2.6",
-    "@fontsource/source-code-pro": "^5.2.6",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/vite": "^4.0.9",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
     "framer-motion": "^12.18.1",
+    "jquery": "^3.7.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-facebook-pixel": "^1.0.4",
     "react-ga4": "^2.1.0",
+    "react-helmet": "^6.1.0",
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
-    "react-medium-image-zoom": "^5.2.14",
     "react-router-dom": "^7.2.0",
     "react-slick": "^0.30.3",
-    "reactflow": "^11.11.4",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.2.10",
+    "web-vitals": "^2.1.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -45,6 +50,7 @@
     "postcss": "^8.5.6",
     "sitemap": "^8.0.0",
     "tailwindcss": "^4.1.10",
+    "terser": "^5.43.1",
     "vite": "^6.3.5",
     "vite-plugin-svgr": "^4.3.0"
   }

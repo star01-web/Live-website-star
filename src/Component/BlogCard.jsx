@@ -16,7 +16,7 @@ const BlogCard = ({ post }) => {
 
   return (
     <Link
-      to={`/blog/${slug}`}
+      to={`/blogs/${slug}`}
       className="bg-white rounded-lg shadow hover:shadow-lg transform hover:scale-[1.02] transition duration-300 flex flex-col"
     >
 

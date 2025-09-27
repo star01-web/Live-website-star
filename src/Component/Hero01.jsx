@@ -18,11 +18,17 @@ function Hero01() {
             </div>            
           </div> */}
           <div className="relative flex justify-center">
-  <div className="relative w-48 h-32 sm:w-64 sm:h-40 md:w-96 md:h-56 lg:w-[28rem] lg:h-72 xl:w-[32rem] xl:h-80 transform transition-transform duration-300 hover:scale-105">
+  <div className="relative w-48 h-32 sm:w-64 sm:h-40 md:w-96 md:h-56 lg:w-[28rem] lg:h-72 xl:w-[32rem] xl:h-80 will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
     <img 
-      src="./kodar.webp" 
-      alt="Aquaculture" 
+      src="/kodar.webp" 
+      srcSet="/kodar-mobile.webp 600w, /kodar.webp 1200w"
+      sizes="(max-width: 640px) 256px, (max-width: 768px) 384px, (max-width: 1024px) 512px, (max-width: 1280px) 640px, 768px"
+      alt="Premium Aquaculture Fish Farming Cage - Star Multiventure" 
       className="w-full h-full rounded-xl border-4 border-white shadow-lg object-cover z-10"
+      loading="lazy"
+      decoding="async"
+      width="512"
+      height="320"
     />
     <div className="absolute inset-0 border-4 border-yellow-500 rounded-xl z-0"></div>
   </div>
@@ -31,8 +37,8 @@ function Hero01() {
           
           {/* Right Text Section */}
 <div>
-<h1 className="text-yellow-500 font-semibold text-2xl uppercase hover:text-yellow-500 relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-yellow-500 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
- Company Vision</h1>
+<h2 className="text-yellow-500 font-semibold text-2xl uppercase  relative inline-block before:content-[''] before:absolute before:left-0 before:bottom-0 before:w-0 before:h-0.5 before:bg-yellow-400 before:transition-all before:duration-300 before:ease-in-out hover:before:w-full">
+ Company Vision</h2>
  <h2 className="text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-bold mt-2 leading-tight">
  We Are Always Ready to Deliver the Best Services
 </h2>
@@ -44,7 +50,7 @@ function Hero01() {
   
         {/* Mission & Vision Cards */}
         <div className="max-w-6xl mx-auto mt-12 grid md:grid-cols-2 gap-6">
-          <div className="bg-white p-6 shadow-md rounded-lg flex items-start space-x-4 transform transition-transform duration-300 hover:scale-105">
+          <div className="bg-white p-6 shadow-md rounded-lg flex items-start space-x-4 will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
             <div className="text-blue-500 text-3xl">
               <FaPuzzlePiece  className="text-yellow-400"/>
             </div>
@@ -59,7 +65,7 @@ function Hero01() {
             </div>
           </div>
   
-          <div className="bg-white p-6 shadow-md rounded-lg flex items-start space-x-4 transform transition-transform duration-300 hover:scale-105">
+          <div className="bg-white p-6 shadow-md rounded-lg flex items-start space-x-4 will-change-transform transition-transform duration-300 hover:scale-105" style={{transform: 'translateZ(0)'}}>
             <div className="text-blue-500 text-3xl">
               <FcIdea />  
             </div>
