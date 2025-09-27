@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import ContactPageSchema from "./ContactPageSchema";
 import BusinessLocationSchema from "./BusinessLocationSchema";
+import OfficeAddressCard from "./AddressCard";
+import SeoSchema from "./SeoSchema";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -29,8 +31,8 @@ const ContactUs = () => {
   const { name, email, phone, product, quantity, message } = formData;
 
   // ✅ Basic Validation
-  if (!name || !email || !phone) {
-    alert("⚠️ Please fill in Name, Email, and Phone.");
+  if (!name || !email || !phone || !product || !quantity || !message) {
+    setError("Please fill in all required fields.");
     return;
   }
 
@@ -41,6 +43,7 @@ const ContactUs = () => {
   }
 
   setLoading(true);
+  setError(null);
 
   try {
     // ✅ Call API
@@ -67,10 +70,10 @@ const ContactUs = () => {
       result = await response.json(); // Try parsing JSON
     } catch (jsonError) {
       const rawText = await responseClone.text(); // Fallback
-      console.error(" Invalid JSON returned from server.");
+      console.error(" Invalid JSON returned from server.", jsonError);
       console.error(" Raw response:", rawText);
-      alert("Something went wrong. Please try again later.");
-      navigate("/errorpage");
+      setError("Invalid response from server. Please try again later.");
+      // navigate("/errorpage");
       return;
     }
 
@@ -79,25 +82,25 @@ const ContactUs = () => {
 
     if (result.status === "success") {
       alert("✅ Thank you! Your request has been submitted.");
-      // setFormData({
-      //   name: "",
-      //   email: "",
-      //   phone: "",
-      //   product: "",
-      //   quantity: "",
-      //   message: "",
-      // });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        product: "",
+        quantity: "",
+        message: "",
+      });
       // if (setFormVisible) setFormVisible(false);
       navigate("/thank-you");
     } else {
-      alert(result.message || "❌ Something went wrong.");
+      setError(result.message || "Something went wrong.");
       navigate("/errorpage");
     }
 
   } catch (error) {
     // ✅ Network Error Catch
-    console.error("❌ API call failed:", error);
-    alert("❌ Unable to connect to server. Please try again.");
+    console.error(" API call failed:", error);
+    setError("Unable to connect to server. Please try again.");
     navigate("/errorpage");
   } finally {
     setLoading(false);
@@ -111,11 +114,12 @@ const ContactUs = () => {
 
   return (
     <>
-<ContactPageSchema />
+{/* <ContactPageSchema /> */}
 <BusinessLocationSchema />
+    <SeoSchema/>
 
 
-    <div className="max-w-3xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-40">
+<div className="max-w-3xl mx-auto p-8 bg-white shadow-lg rounded-lg mt-40 mb-11">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Contact Us
       </h1>
@@ -193,8 +197,8 @@ const ContactUs = () => {
             type="text"
             name="quantity"
             placeholder="Quantity"
-            value={formData.quantity
-}
+            value={formData.quantity}
+            required
             onChange={handleChange}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
@@ -220,8 +224,18 @@ const ContactUs = () => {
 </button>
 
       </form>
-    </div></>
+ </div>
+{/* <div className="flex justify-center mt-8 mb-12">
+   <OfficeAddressCard
+        company="Star Multiventure Pvt. Ltd."
+        address="401, 4th Floor, Offizo, Rama Magneto Mall, near Shrikant Verma Marg, Bilaspur, Chhattisgarh 495001"
+        phone="+91 9039023820, 21,22,26"
+        email="info@starmultiventure.com"        
+      />
+      </div> */}
+      </>
   );
 };
+
 
 export default ContactUs;

@@ -1,0 +1,1 @@
+import{j as o}from"./react-core-BMLOARFg.js";import"./analytics-qcYJWSSH.js";import"./vendor-BrenfCQd.js";function CompanyFlowChart(){return o.jsx("div",{children:"CompanyFlowChart"})}export{CompanyFlowChart as default};

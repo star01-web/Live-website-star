@@ -203,3 +203,29 @@ svg path:hover {
     display: none !important;
   }
 }
+
+
+.swiper-slide-custom {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+  transform: scale(0.85);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.swiper-slide-prev + .swiper-slide-prev,
+.swiper-slide-next + .swiper-slide-next {
+  transform: scale(0.75);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
