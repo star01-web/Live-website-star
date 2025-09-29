@@ -3,7 +3,7 @@ import { TbMailCheck } from "react-icons/tb";
 import { FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { FaFacebook } from "react-icons/fa6"; 
 import { useEffect, useState } from "react";
-import { /* motion */ } from "framer-motion";
+import { motion } from "framer-motion";
 import "../main.css"
 const ThankYouPage = () => {
   const navigate = useNavigate();

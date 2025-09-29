@@ -2,19 +2,19 @@
 
 const pages = [
   { name: "Home", url: "https://www.starsupplierss.com/",
-    title: "Star Suppliers - Leading Aquaculture Solutions Provider in India" ,
-    MetaDescription: "Star Suppliers is a premier aquaculture solutions provider in India, specializing in HDPE pontoons, floating jetties, fish cages, and more. Explore our innovative products and services to enhance your aquaculture projects."
+    title: "Star Suppliers - Leading Aquaculture & Cage Culture Solutions Provider in India" ,
+    MetaDescription: "India's leading cage culture system supplier. Get the best HDPE fish cage price for your river or reservoir fish farm. Contact us for a free quote!"
   },
   { name: "About Us", url: "https://www.starsupplierss.com/about-us",
     title: "About Star Suppliers - Pioneers in Aquaculture Solutions",
     MetaDescription: "Learn about Star Suppliers, a leading aquaculture solutions provider in India. Discover our mission, vision, and the innovative products and services we offer to support sustainable aquaculture practices."
    },
   { name: "Contact", url: "https://www.starsupplierss.com/contact",
-    title: "Contact Star Suppliers - Your Aquaculture Solutions Partner",
+    title: "About Star Suppliers | India's Trusted Aquaculture Experts",
     MetaDescription: "Get in touch with Star Suppliers, a top aquaculture solutions provider in India. Contact us for inquiries about our HDPE pontoons, floating jetties, fish cages, and other innovative aquaculture products and services."
    },
   { name: "Products", url: "https://www.starsupplierss.com/products",
-    title: "Aquaculture Products - HDPE Pontoons, Floating Jetties & More | Star Suppliers",
+    title: "Aquaculture  Products - HDPE Pontoons Cag, Floating Jetties & More | Star Suppliers",
     MetaDescription: "Explore Star Suppliers' range of aquaculture products, including HDPE pontoons, floating jetties, fish cages, and more. Discover innovative solutions to enhance your aquaculture projects in India."
    },
   { name: "Projects", url: "https://www.starsupplierss.com/projects",
@@ -44,198 +44,222 @@ const products = [
   {
     name: "HDPE Pontoon Rectangle Cage 6x4x4",
     url: "https://www.starsupplierss.com/products/hdpe-pontoon-rectangle-cage-6x4x4",
+    // ✅ FIXED & ADDED
+    title: "HDPE Fish Cage (6x4x4) for Aquaculture | Star Suppliers",
+    metaDescription: "Buy the durable 6x4x4 HDPE pontoon cage for efficient fish farming. Ideal for cage culture in lakes & reservoirs. Get a free quote today.",
     description: "High-quality HDPE cage for aquaculture projects.",
     price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    sku: "SS-CAGE-644" // ✅ FIXED
   },
   {
     name: "HDPE Pontoon Rectangle Cage 7.5x4x4",
     url: "https://www.starsupplierss.com/products/hdpe-pontoon-rectangle-cage-7.5x4x4",
-    title: "HDPE Pontoon Rectangle Cage 7.5x4x4 - Star Suppliers",
-    MetaDescription: "Discover the HDPE Pontoon Rectangle Cage 7.5x4x4 from Star Suppliers, a leading aquaculture solutions provider in India. This durable and efficient cage is perfect for fish farming projects. Order now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Rectangle Fish Cage (7.5x4x4) | Cage Culture Farming",
+    metaDescription: "Discover our 7.5x4x4 HDPE floating fish cage for modern cage culture. A durable, cost-effective solution for freshwater and brackish water farming.",
     description: "Durable HDPE cage for efficient fish farming.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹18,000",
+    sku: "SS-CAGE-7544" // ✅ FIXED
   },
   {
-    name: "HDPE Pontoon Rectangle Cage 20x20x45",
-    url: "https://www.starsupplierss.com/products/hdpe-pontoon-rectangle-cage-20x20x45",
-      title: "HDPE Pontoon Rectangle Cage 20x20x45 - Star Suppliers",
-    MetaDescription: "Explore the HDPE Pontoon Rectangle Cage 20x20x45 from Star Suppliers, a top aquaculture solutions provider in India. This large cage is ideal for commercial fish farming. Get yours today!",
+    name: "HDPE Pontoon Rectangle Cage 20x20x4.5",
+    url: "https://www.starsupplierss.com/products/hdpe-pontoon-rectangle-cage-20x20x4-5",
+    // ✅ OPTIMIZED
+    title: "Large HDPE Fish Cage (20x20x4.5) for Commercial Aquaculture",
+    metaDescription: "Explore our large 20x20x4.5 HDPE cage, ideal for commercial fish farming. High-quality construction for maximum yield and durability. Order now!",
     description: "Large HDPE cage suitable for commercial aquaculture.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹85,000",
+    sku: "SS-CAGE-202045" // ✅ FIXED
   },
   {
     name: "HDPE Floating Jetty",
     url: "https://www.starsupplierss.com/products/hdpe-floating-jetty",
-    title: "HDPE Floating Jetty - Star Suppliers",
-    MetaDescription: "Check out the HDPE Floating Jetty from Star Suppliers, a premier aquaculture solutions provider in India. This sturdy jetty is perfect for aquaculture farms and recreational use. Buy now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Floating Jetty & Dock Solutions in India | Star Suppliers",
+    metaDescription: "Buy sturdy and modular HDPE floating jetties from Star Suppliers. Perfect for aquaculture farms, marinas, and recreational use. Get a custom quote!",
     description: "Sturdy floating jetty for aquaculture farms.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "As per requirement",
+    sku: "SS-JETTY-01" // ✅ FIXED
   },
   {
     name: "Floating Restaurant",
     url: "https://www.starsupplierss.com/products/floating-restaurant",
-    title: "Floating Restaurant - Star Suppliers",
-    MetaDescription: "Discover the Floating Restaurant from Star Suppliers, a leading aquaculture solutions provider in India. This innovative solution is perfect for lakes and reservoirs. Contact us for more details!",
+    // ✅ OPTIMIZED
+    title: "Floating Restaurant Construction | Star Suppliers",
+    metaDescription: "Build a unique dining experience with a floating restaurant from Star Suppliers. An innovative solution for lakes, rivers, and reservoirs. Contact us for details!",
     description: "Floating restaurant solution for lakes and reservoirs.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "As per requirement",
+    sku: "SS-RESTAURANT-01" // ✅ FIXED
   },
   {
     name: "Dewatering System",
     url: "https://www.starsupplierss.com/products/dewatering-system",
-    title: "Dewatering System - Star Suppliers",
-    MetaDescription: "Explore the Dewatering System from Star Suppliers, a top aquaculture solutions provider in India. This efficient system is ideal for aquaculture projects. Learn more and get a quote today!",
-    description: "Efficient dewatering system for aquaculture projects.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    // ✅ OPTIMIZED
+    title: "Mine Dewatering Systems & Solutions | Star Suppliers",
+    metaDescription: "Explore efficient dewatering systems for mining and industrial use. Our floating platforms ensure reliable water removal. Get a quote today!",
+    description: "Efficient dewatering system for various projects.",
+    price: "As per requirement",
+    sku: "SS-DEWATER-01" // ✅ FIXED
   },
   {
     name: "HDPE Double Floating Pontoon",
     url: "https://www.starsupplierss.com/products/hdpe-double-floating-pontoon",
-    title: "HDPE Double Floating Pontoon - Star Suppliers",
-    MetaDescription: "Check out the HDPE Double Floating Pontoon from Star Suppliers, a premier aquaculture solutions provider in India. This stable pontoon is perfect for floating platforms. Order now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Double Floating Pontoon for Docks & Bridges | Star Suppliers",
+    metaDescription: "Our HDPE double floating pontoons offer superior stability for floating docks, bridges, and platforms. Durable, modular, and easy to install. Order now!",
     description: "Double pontoon for stable floating platforms.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹3,500",
+    sku: "SS-PONTOON-DBL-01" // ✅ FIXED
   },
   {
     name: "Hexagonal Single Pontoon",
     url: "https://www.starsupplierss.com/products/hexagonal-single-pontoon",
-    title: "Hexagonal Single Pontoon - Star Suppliers",
-    MetaDescription: "Discover the Hexagonal Single Pontoon from Star Suppliers, a leading aquaculture solutions provider in India. This versatile pontoon is ideal for various floating structures. Buy now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Hexagonal Single Pontoon for Modular Docks",
+    metaDescription: "Discover our versatile hexagonal single pontoons made from durable HDPE. Ideal for creating flexible and robust floating structures and walkways. Buy now!",
     description: "Hexagonal pontoon for flexible floating structures.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹2,500",
+    sku: "SS-PONTOON-HEX-01" // ✅ FIXED
   },
   {
     name: "HDPE Anti Skid Single Pontoon",
     url: "https://www.starsupplierss.com/products/hdpe-anti-skid-single-pontoon",
-    title: "HDPE Anti Skid Single Pontoon - Star Suppliers",
-    MetaDescription: "Explore the HDPE Anti Skid Single Pontoon from Star Suppliers, a top aquaculture solutions provider in India. This pontoon features an anti-skid surface for safety. Get yours today!",
+    // ✅ OPTIMIZED
+    title: "HDPE Anti-Skid Single Pontoon for Safe Walkways",
+    metaDescription: "Ensure safety with our HDPE anti-skid single pontoons. Featuring a non-slip surface, they are perfect for docks and platforms. Get yours today!",
     description: "Anti-skid pontoon for safety.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹2,200",
+    sku: "SS-PONTOON-ASK-01" // ✅ FIXED
   },
   {
     name: "HDPE Top Cover Single Pontoon",
     url: "https://www.starsupplierss.com/products/hdpe-top-cover-single-pontoon",
-    title: "HDPE Top Cover Single Pontoon - Star Suppliers",
-    MetaDescription: "Check out the HDPE Top Cover Single Pontoon from Star Suppliers, a premier aquaculture solutions provider in India. This pontoon includes a top cover for added protection. Order now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Top Cover Single Pontoon | Star Suppliers",
+    metaDescription: "Our HDPE single pontoon with a top cover offers added protection and a smooth surface for your floating platforms. Durable and easy to install. Order now!",
     description: "Top cover pontoon for protection.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹2,800",
+    sku: "SS-PONTOON-TC-01" // ✅ FIXED
   },
   {
     name: "Nursery Net 6x4x4",
     url: "https://www.starsupplierss.com/products/nursery-net-6x4x4",
-    title: "Nursery Net 6x4x4 - Star Suppliers",
-    MetaDescription: "Discover the Nursery Net 6x4x4 from Star Suppliers, a leading aquaculture solutions provider in India. This net is perfect for young fish in aquaculture projects. Buy now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Nursery Net (6x4x4) for Fish Farming | Star Suppliers",
+    metaDescription: "Protect your young fish with our durable 6x4x4 nursery net. Made from high-quality HDPE, it's perfect for aquaculture projects. Buy now!",
     description: "Nursery net for young fish.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹4,500",
+    sku: "SS-NET-NUR-644" // ✅ FIXED
   },
   {
     name: "Nursery Net 7.5x4x4",
     url: "https://www.starsupplierss.com/products/nursery-net-7.5x4x4",
-    title: "Nursery Net 7.5x4x4 - Star Suppliers",
-    MetaDescription: "Explore the Nursery Net 7.5x4x4 from Star Suppliers, a top aquaculture solutions provider in India. This larger net is ideal for growing fish. Get yours today!",
+    // ✅ OPTIMIZED
+    title: "HDPE Nursery Net (7.5x4x4) for Aquaculture",
+    metaDescription: "Our larger 7.5x4x4 HDPE nursery net is ideal for growing fingerlings safely in your fish farm. High-quality and long-lasting. Get yours today!",
     description: "Larger nursery net for aquaculture.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹5,500",
+    sku: "SS-NET-NUR-7544" // ✅ FIXED
   },
   {
     name: "HDPE Grow Out Net 6x4x4",
     url: "https://www.starsupplierss.com/products/hdpe-grow-out-net-6x4x4",
-    title: "HDPE Grow Out Net 6x4x4 - Star Suppliers",
-    MetaDescription: "Check out the HDPE Grow Out Net 6x4x4 from Star Suppliers, a premier aquaculture solutions provider in India. This net is perfect for fish growth in aquaculture projects. Order now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Grow Out Net (6x4x4) for Fish Growth",
+    metaDescription: "Maximize fish growth with our 6x4x4 HDPE grow-out net. Designed for durability and optimal water flow in aquaculture cages. Order now!",
     description: "Grow-out net for fish growth.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹5,000",
+    sku: "SS-NET-GRO-644" // ✅ FIXED
   },
   {
     name: "HDPE Grow Out Net 7.5x4x4",
     url: "https://www.starsupplierss.com/products/hdpe-grow-out-net-7.5x4x4",
-    title: "HDPE Grow Out Net 7.5x4x4 - Star Suppliers",
-    MetaDescription: "Discover the HDPE Grow Out Net 7.5x4x4 from Star Suppliers, a leading aquaculture solutions provider in India. This larger net is ideal for fish growth. Buy now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Grow Out Net (7.5x4x4) for Aquaculture | Star Suppliers",
+    metaDescription: "Our durable 7.5x4x4 HDPE grow-out net is perfect for the final growth stage of fish in your aquaculture project. Buy now for better yield!",
     description: "Larger grow-out net.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹6,000",
+    sku: "SS-NET-GRO-7544" // ✅ FIXED
   },
   {
-    name: "HDPE Grow Out Net 20x20x45",
-    url: "https://www.starsupplierss.com/products/hdpe-grow-out-net-20x20x45",
-    title: "HDPE Grow Out Net 20x20x45 - Star Suppliers",
-    MetaDescription: "Explore the HDPE Grow Out Net 20x20x45 from Star Suppliers, a top aquaculture solutions provider in India. This large net is perfect for commercial fish growth. Get yours today!",
+    name: "HDPE Grow Out Net 20x20x4.5",
+    url: "https://www.starsupplierss.com/products/hdpe-grow-out-net-20x20x4-5",
+    // ✅ OPTIMIZED
+    title: "Commercial HDPE Grow Out Net (20x20x4.5) | Star Suppliers",
+    metaDescription: "This large 20x20x4.5 HDPE grow-out net is perfect for commercial fish growth, ensuring durability and high performance. Get yours today!",
     description: "Commercial size grow-out net.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹25,000",
+    sku: "SS-NET-GRO-202045" // ✅ FIXED
   },
   {
     name: "HDPE Bird Net 6x4x4",
     url: "https://www.starsupplierss.com/products/hdpe-bird-net-6x4x4",
-    title: "HDPE Bird Net 6x4x4 - Star Suppliers",
-    MetaDescription: "Check out the HDPE Bird Net 6x4x4 from Star Suppliers, a premier aquaculture solutions provider in India. This bird net is essential for protecting fish cages. Order now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Bird Net (6x4x4) for Protecting Fish Cages",
+    metaDescription: "Protect your fish from predators with our 6x4x4 HDPE bird net. An essential accessory for any open-water fish cage. Order now!",
     description: "Bird protection net for cages.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹3,000",
+    sku: "SS-NET-BRD-644" // ✅ FIXED
   },
   {
     name: "HDPE Bird Net 7.5x4x4",
     url: "https://www.starsupplierss.com/products/hdpe-bird-net-7.5x4x4",
-    title: "HDPE Bird Net 7.5x4x4 - Star Suppliers",
-    MetaDescription: "Discover the HDPE Bird Net 7.5x4x4 from Star Suppliers, a leading aquaculture solutions provider in India. This larger bird net is perfect for protecting fish cages. Buy now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Bird Net (7.5x4x4) for Aquaculture Protection",
+    metaDescription: "Our larger 7.5x4x4 HDPE bird net offers superior protection for your fish cages against birds and other predators. Buy now!",
     description: "Larger bird net for aquaculture.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "₹4,000",
+    sku: "SS-NET-BRD-7544" // ✅ FIXED
   },
   {
     name: "HDPE Bird Net 20x20x5",
     url: "https://www.starsupplierss.com/products/hdpe-bird-net-20x20x5",
-    title: "HDPE Bird Net 20x20x5 - Star Suppliers",
-    MetaDescription: "Explore the HDPE Bird Net 20x20x5 from Star Suppliers, a top aquaculture solutions provider in India. This commercial bird net is ideal for large cages. Get yours today!",
+    // ✅ OPTIMIZED
+    title: "Commercial HDPE Bird Net (20x20x5) for Large Cages",
+    metaDescription: "Protect your large-scale aquaculture project with our 20x20x5 commercial-grade HDPE bird net. Ideal for large cages. Get yours today!",
     description: "Commercial bird net for large cages.",
     price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    sku: "SS-NET-BRD-20205" // ✅ FIXED
   },
   {
     name: "HDPE Nut and Bolt",
     url: "https://www.starsupplierss.com/products/hdpe-nut-and-bolt",
-    title: "HDPE Nut and Bolt - Star Suppliers",
-    MetaDescription: "Check out the HDPE Nut and Bolt from Star Suppliers, a premier aquaculture solutions provider in India. These accessories are essential for cage assembly. Order now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Nut and Bolt | Corrosion-Resistant Plastic Fasteners",
+    metaDescription: "Durable and corrosion-resistant HDPE nuts and bolts. These plastic fasteners are essential for assembling aquaculture cages and pontoons. Order now!",
     description: "HDPE nut and bolt accessories.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "As per requirement",
+    sku: "SS-ACC-NUTBOLT" // ✅ FIXED
   },
   {
     name: "HDPE Center Pin",
     url: "https://www.starsupplierss.com/products/hdpe-center-pin",
-    title: "HDPE Center Pin - Star Suppliers",
-    MetaDescription: "Discover the HDPE Center Pin from Star Suppliers, a leading aquaculture solutions provider in India. This pin is perfect for cage assembly. Buy now!",
+    // ✅ OPTIMIZED
+    title: "HDPE Center Pin for Floating Dock Assembly | Star Suppliers",
+    metaDescription: "Our HDPE center pins are perfect for securely assembling modular floating docks and pontoons. A durable and essential accessory. Buy now!",
     description: "HDPE center pin for cage assembly.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "As per requirement",
+    sku: "SS-ACC-PIN" // ✅ FIXED
   },
   {
     name: "HDPE Railings",
     url: "https://www.starsupplierss.com/products/hdpe-railings",
-    title: "HDPE Railings - Star Suppliers",
-    MetaDescription: "Explore the HDPE Railings from Star Suppliers, a top aquaculture solutions provider in India. These railings are ideal for floating platforms. Get yours today!",
+    // ✅ OPTIMIZED
+    title: "Durable HDPE Railings for Floating Platforms & Jetties",
+    metaDescription: "Ensure safety on your floating platforms with our strong and durable HDPE railings. Ideal for docks, jetties, and aquaculture cages. Get yours today!",
     description: "HDPE railings for floating platforms.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "As per requirement",
+    sku: "SS-ACC-RAIL-HDPE" // ✅ FIXED
   },
   {
     name: "Stainless Steel Railings",
     url: "https://www.starsupplierss.com/products/stainless-steel-railings",
-    title: "Stainless Steel Railings - Star Suppliers",
-    MetaDescription: "Check out the Stainless Steel Railings from Star Suppliers, a premier aquaculture solutions provider in India. These durable railings are perfect for floating platforms. Order now!",
+    // ✅ OPTIMIZED
+    title: "Stainless Steel Railings for Docks & Jetties | Star Suppliers",
+    metaDescription: "Our premium stainless steel railings offer maximum durability and a sleek finish for floating platforms, cages, and jetties. Order now!",
     description: "Durable stainless steel railings.",
-    price: "₹15,000",
-    sku: "HDPE-CAGE-644"
+    price: "As per requirement",
+    sku: "SS-ACC-RAIL-SS" // ✅ FIXED
   }
 ];
 

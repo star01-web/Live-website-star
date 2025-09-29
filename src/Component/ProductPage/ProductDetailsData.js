@@ -18,7 +18,11 @@ const productDetailsData = [
     "longDescription2": "HDPE fish cages are widely used for cage fish farming due to their durability, corrosion resistance, and ability to withstand harsh weather conditions. Farmers can cultivate species like tilapia, carp, catfish, and sea bass efficiently in these cages. Cage culture fish farming reduces land use, lowers operational costs, and increases fish production, making it one of the most profitable aquaculture farming methods.",
     "longDescription3": "Fish cage farming (also called cage culture aquaculture) is transforming the way we produce fish worldwide. With the growing demand for protein-rich seafood, farmers are turning to floating fish cages as an efficient and sustainable method of aquaculture farming. By using HDPE fish cages, farmers can maximize production while minimizing operational costs.",
     "link": "https://www.indiamart.com/proddetail/6x4x4-meter-hdpe-aqucacultre-cage-2853147770333.html?sellerpreview=1",
-    "image":  "/product/6X4/img01.webp"
+    "image":  "/product/6X4/img01.webp",
+    "meta": {
+      "title": "HDPE Rectangle Fish Cage (6x4x4) for Aquaculture | Star Suppliers",
+      "description": "Buy the durable 6x4x4 HDPE pontoon rectangle cage for efficient fish farming. Ideal for cage culture in lakes & reservoirs. Get a quote today."
+    }
     
   },
   {
@@ -42,9 +46,9 @@ const productDetailsData = [
     "link": "https://www.indiamart.com/proddetail/7-5x5x4-meter-hdpe-aqucacultre-cage-2853147770488.html?sellerpreview=1",
     "image": "/product/7.5X4/p2.png"
     ,
-    "meta":{
-      "title": "Aquaculture Fish Cage for Fish Farming | HDPE Cages",
-      "description": "Buy HDPE floating fish cage 7.5X4X4 for cage culture aquaculture. Durable, cost-effective solution for fish farming. Ideal for freshwater and brackish water.",
+    "meta": {
+      "title": "HDPE Rectangle Fish Cage (7.5x4x4) | Cage Culture Farming",
+      "description": "Buy the 7.5x4x4 HDPE floating fish cage for modern cage culture. A durable, cost-effective solution for fish farming in freshwater and brackish water."
     }
   },
   {
@@ -67,14 +71,12 @@ const productDetailsData = [
    "longDescription3": "The fish cage 20X20X4.5 is a highly durable solution for cage fish farming. Farmers who want to increase production through floating fish cages often choose this model for its stability, cost-effectiveness, and suitability for both freshwater and marine aquaculture. With the rise of aquaculture farming, HDPE fish cages like these are becoming essential for sustainable fish production.",
     "link": "https://www.indiamart.com/proddetail/20x20x4-5-meter-hdpe-aqucacultre-cage-2853149560412.html?sellerpreview=1",
     "image": "/product/20X20/p01.webp",
-    "meta":{
-      "title": "Fish Cage 20X20X4.5 for Aquaculture Farming | HDPE Floating Cages",
-      "description": "Buy high-quality HDPE fish cage 20X20X4.5 for cage fish farming. Learn cost, benefits & setup of floating aquaculture fish cages.",
+    "meta": {
+      "title": "Large HDPE Fish Cage (20x20x4.5) for Commercial Aquaculture",
+      "description": "Buy the high-quality 20x20x4.5 HDPE fish cage for commercial fish farming. Learn about the cost, benefits & setup for your aquaculture project."
     }
   },
 
-
-  
   {
     "id": 4,
     "title": "HDPE Floating Jetty",
@@ -95,9 +97,9 @@ const productDetailsData = [
     "longDescription3": "A floating dock is an innovative water platform designed for safe access, recreation, aquaculture, and commercial use. Whether it’s a floating pontoon, floating jetty, or commercial floating dock, these modular systems are becoming increasingly popular worldwide. Built with HDPE materials, they are lightweight, durable, and resistant to environmental damage, making them the go-to solution for marinas, fisheries, and water sports facilities.",
     "link": "https://www.indiamart.com/proddetail/hdpe-floating-jetty-walkway-2853147771873.html?sellerpreview=1",
     "image": "/product/jetty/Floating Jetty.webp",
-    "meta":{
-      "title": "Floating Dock & Pontoon Jetty | Durable Water Platforms",
-      "description": "Discover durable floating docks, pontoons, and jetties for commercial and recreational use. Explore water platforms built with HDPE and modular designs.",
+    "meta": {
+      "title": "HDPE Floating Dock & Pontoon Jetty | Durable Water Platforms",
+      "description": "Discover durable floating docks, pontoons, and jetties for commercial and recreational use. Explore water platforms built with HDPE and modular designs."
     }
   },
   {
@@ -120,9 +122,9 @@ const productDetailsData = [
     "longDescription3": "A floating restaurant is more than just a dining place—it is an experience on water. Built on floating pontoons or docks, these restaurants provide a luxury atmosphere while being eco-friendly and sustainable. From romantic dinners on lakes to family-friendly floating cafes, this innovative concept is reshaping the hospitality and aqua tourism industry.",
     "link": "https://www.indiamart.com/star-suppliers-bilaspur/products.html",
     "image": "/product/restaurant/rest1.webp",
-    "meta":{
-      "title": "Floating Restaurant| Experience Dining on Water",
-      "description": "Discover floating restaurants, their benefits, design, and business opportunities. Learn why floating dining is the future of luxury and eco-friendly hospitality.",
+    "meta": {
+      "title": "Floating Restaurant Construction | Experience Dining on Water",
+      "description": "Discover floating restaurants, their benefits, design, and business opportunities. Learn why floating dining is the future of luxury and eco-friendly hospitality."
     }
   },
   { 
@@ -145,9 +147,9 @@ const productDetailsData = [
     "longDescription3": "A dewatering system in mine is an essential part of modern mining operations. It is used to remove groundwater or surface water from mine shafts, tunnels, and open pits to ensure safe and efficient excavation. Without proper mine dewatering, excess water can lead to unstable slopes, equipment damage, reduced productivity, and even safety hazards. Modern mining industries adopt advanced dewatering pumps, slurry pumps, submersible pumps, and drainage systems to manage water effectively.",
     "link": "https://www.indiamart.com/star-suppliers-bilaspur/products.html",
     "image": "/product/dewatering-system/dewatering-system.webp",
-    "meta":{
-      "title": "Dewatering System in Mine – Process, Types & Benefits",
-      "description": "Learn about dewatering systems in mining, their types, benefits, and efficiency in groundwater control for safe and sustainable mining operations.",
+    "meta": {
+      "title": "Mine Dewatering Systems – Process, Types & Benefits",
+      "description": "Learn about dewatering systems in mining, their types, benefits, and efficiency in groundwater control for safe and sustainable mining operations."
     }
   },
   {
@@ -170,12 +172,13 @@ const productDetailsData = [
     "longDescription3": "Applications of Floating Pontoon Systems, Floating Double Docks – Provide strong platforms for boats, yachts, and water sports equipment.,Double Pontoon Bridges – Ideal for connecting shores, industrial sites, or temporary event setups.,Aquaculture Platforms – Widely used in fish farms and water-based agriculture.,Resort & Leisure Projects – Floating walkways, sunbathing platforms, and recreational water spaces.",
     "link": "https://www.indiamart.com/proddetail/hdpe-double-floating-pontoon-2853149559548.html",
     "image": "/product/Accessories/double pontoon.webp",
-    "meta":{
-      "title": "Floating Double Pontoon Dock & Bridge Solutions",
-      "description": "Explore HDPE floating pontoon systems: double pontoon floats, floating docks, and pontoon bridges. Durable, modular, and built for water access.",}
+    "meta": {
+      "title": "HDPE Double Floating Pontoon for Docks & Bridges | Star Suppliers",
+      "description": "Explore HDPE double pontoon floats for building modular floating docks and pontoon bridges. A durable and stable solution for all water access needs."
+    }
   },
   {
-    "id": 7,
+    "id": 8,
     "title": "Hexagonal Single Pontoon",
     "slogan": "Hexagonal Single Pontoon",
     "material": "HDPE",
@@ -193,13 +196,13 @@ const productDetailsData = [
     "longDescription2": "Ideal for private and commercial use, our pontoon bridge and floating dock systems feature UV-stable HDPE construction, corrosion-resistant fittings, and optional aluminum sub-framing. The floating single pontoon units can handle pedestrian or light vehicle load, and expand into longer walkways with additional modules.",
     "longDescription3": "Single pontoon bridge segments may be 600 mm wide and 600 mm long, 500 mm Deep. Floating single dock units can hold light loads like kayaks or paddleboards stackable to form longer walkways. The modular design means you tailor length and width.",
     "image": "/product/Accessories/hexagonal.webp",
-    "meta":{
+    "meta": {
       "title": "HDPE Hexagonal Single Pontoon for Modular Floating Docks",
-      "description": "Discover durable HDPE hexagonal pontoons for docks, bridges, and walkways. UV-resistant, easy to install, and perfect for modular floating systems.",
+      "description": "Discover durable HDPE hexagonal pontoons for docks and walkways. UV-resistant, easy to install, and perfect for creating modular floating systems."
     }
   },
   {
-    "id": 8,
+    "id": 9,
     "title": "HDPE Anti-Skid Single Pontoon",
     "slogan": "HDPE Anti-Skid Single Pontoon",
     "material": "HDPE",
@@ -217,13 +220,13 @@ const productDetailsData = [
     "longDescription2": "Made with UV-resistant HDPE, our pontoons are slip-proof, corrosion-free, and modular. The Anti-Skid design ensures safety for pedestrians, while strong buoyancy makes them ideal for floating single docks, aquaculture cages, and single pontoon bridges.", 
     "longDescription3": "Slip-Free Surface: Anti-skid design prevents accidents, ensuring safety for children, adults, and workers.Durability: HDPE resists UV rays, saltwater, and impact.Eco-Friendly: 100% recyclable and safe for marine life.Modular & Customizable: Build docks, bridges, or platforms in any shape or size.",
     "image": "/product/Accessories/Single-pontoon.webp",
-    "meta":{
+    "meta": {
       "title": "HDPE Anti-Skid Floating Pontoon & Dock Systems",
-      "description": "Discover durable HDPE Anti-Skid pontoons, floats, docks, and bridges. Non-slip, modular, and safe for marine, aquaculture, and leisure use.",
+      "description": "Discover durable HDPE anti-skid pontoons and floats for docks and bridges. A non-slip, modular, and safe solution for marine and aquaculture use."
     }
   },
   {
-    "id": 9,
+    "id": 10,
     "title": "HDPE Top Cover Single Pontoon",
     "slogan": "HDPE Top Cover Single Pontoon",
     "material": "HDPE",
@@ -241,13 +244,13 @@ const productDetailsData = [
     "longDescription2": "Our single pontoon floats and HDPE Top Cover docks are easy to assemble, lightweight, and corrosion-resistant. Ideal for fish farming, floating restaurants, tourism, and water sports platforms. Designed with high load capacity, non-slip surface, and customizable color options.",
     "longDescription3": "Durability & Longevity – HDPE pontoons are corrosion-resistant, UV-stabilized, and built for long-term performance in both fresh and saltwater.Eco-Friendly & Safe – Non-toxic, recyclable material that is safe for aquatic life.Easy Installation – Modular design allows quick assembly for floating docks, bridges, and single pontoons.Versatility – Suitable for aquaculture cages, marina docks, floating restaurants, and tourism projects.Cost-Effective – Long service life with minimal maintenance compared to traditional wooden or steel pontoons.",
     "image": "/product/Accessories/single-pontoon-top-cover.webp",
-    "meta":{
-      "title": "HDPE Top Cover Floating Pontoon & Single Pontoon Solutions",
-      "description": "Explore HDPE Top Cover floating pontoon, pontoon floats, docks & bridges. Durable, modular & eco-friendly solutions for aquaculture, marinas & tourism.",
+    "meta": {
+      "title": "HDPE Top Cover Floating Pontoon | Single Pontoon Solutions",
+      "description": "Explore HDPE top cover floating pontoons and floats for docks & bridges. Durable, modular & eco-friendly for aquaculture, marinas & tourism."
     }
   },
   {
-    "id": 10,
+    "id": 11,
     "title": "HDPE Nursery Net 6X4X4",
     "slogan": "Nursery Net 6X4X4",
     "material": "HDPE Net",
@@ -266,13 +269,13 @@ const productDetailsData = [
     "longDescription3": "Key benefits include: UV-stabilized and eco-friendly design, Long-lasting and resistant to wear and tear, Protects fish from predators, Easy installation and maintenance, Cost-effective solution for fish farming nets.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-nursery-nets-6x4x4-2856619774148.html?sellerpreview=1",
     "image": "/product/Accessories/nur.webp",
-    "meta":{
-      "title": "HDPE Nursery Net 6X4X4 for Fish Farming | Best Price",
-      "description": "Buy durable Aquaculture HDPE Nursery Net 6X4X4 fish cage nets for fish farming. Affordable prices, strong netting, and long-lasting performance.",
+    "meta": {
+      "title": "HDPE Nursery Net (6x4x4) for Fish Farming | Best Price",
+      "description": "Buy durable aquaculture HDPE nursery nets (6x4x4) for fish farming. Affordable prices, strong netting, and long-lasting performance for your cage."
     }
   },
   {
-    "id": 11,
+    "id": 12,
     "title": "HDPE Nursery Net 7.5X4X4",
     "slogan": "Nursery Net 7.5X4X4",
     "material": "HDPE Net",
@@ -291,13 +294,13 @@ const productDetailsData = [
     "longDescription3": "Benefits of Using HDPE Fish Cage Nets Durability & Strength – HDPE nets are stronger than traditional nylon nets. UV & Weather Resistant – Designed to withstand direct sunlight and harsh aquatic environments. Cost-Effective – Affordable fish farming net prices make them suitable for both small and large farms. Easy Maintenance – The smooth surface prevents algae growth and biofouling. Safe for Fish Breeding – The fish breeding net design ensures secure breeding and minimizes losses.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-nursery-nets-7-5x4x4-2856619774391.html?sellerpreview=1",
     "image": "/product/Accessories/nur.webp",
-    "meta":{
-      "title": "HDPE Nursery Net 7.5X4X4 for Aquaculture | Fish Cage Nets",
-      "description":"Buy high-quality HDPE Nursery Net 7.5X4X4 for fish farming. Durable aquaculture cage nets at affordable prices. Ideal for net cage fish farming & breeding."
+    "meta": {
+      "title": "HDPE Nursery Net (7.5x4x4) for Aquaculture | Fish Cage Nets",
+      "description": "Buy high-quality HDPE nursery nets (7.5x4x4) for fish farming. Durable aquaculture cage nets at affordable prices, ideal for breeding."
     }
   },
   {
-    "id": 12,
+    "id": 13,
     "title": "HDPE Grow Out Net 6X4X4",
     "slogan": "HDPE Grow Out Net 6X4X4",
     "material": "HDPE Net",
@@ -316,13 +319,13 @@ const productDetailsData = [
     "longDescription3": "Aquaculture is growing rapidly as a sustainable solution for global fish demand. Among the essential tools for modern fish farmers is the HDPE Grow Out Net 6X4X4, a specially designed fish cage net that ensures durability, flexibility, and cost-effectiveness. Whether you are setting up net cage fish farming, planning a fish breeding net, or exploring the best fish farming net price, choosing the right aquaculture cage nets is critical for productivity and long-term success.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-growout-nets-6x4x4-2856619739033.html?sellerpreview=1",
     "image": "/product/Accessories/growout-net.webp",
-    "meta":{
-      "title": "Aquaculture HDPE Grow Out Net 6X4X4 for Fish Cage Farming ",
-      "description": "Buy Aquaculture HDPE Grow Out Net 6X4X4 at best price. Strong, durable fish cage nets for fish farming, aquaculture & breeding. Check fish farming net price today.",
+    "meta": {
+      "title": "Aquaculture HDPE Grow Out Net (6x4x4) for Fish Cage Farming",
+      "description": "Buy Aquaculture HDPE Grow Out Net (6x4x4) at the best price. Strong, durable fish cage nets for fish farming, aquaculture & breeding. Check prices today."
     }
   },
   {
-    "id": 13,
+    "id": 14,
     "title": "HDPE Grow Out Net 7.5X4X4",
     "slogan": "HDPE Grow Out Net 7.5X4X4",
     "material": "HDPE Net",
@@ -341,13 +344,13 @@ const productDetailsData = [
     "longDescription3": "Aquaculture HDPE Grow Out Net 7.5X4X4 netting is one of the most trusted solutions for modern fish farmers. Designed specifically for net cage fish farming, this HDPE (High-Density Polyethylene) net is durable, UV-stabilized, and resistant to harsh water conditions. Whether you are looking for an affordable fish cage net price or a long-lasting fish breeding net, the 7.5X4X4 HDPE net is a perfect choice for aquaculture entrepreneurs.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-growout-nets-7-5x4x4-2856619739191.html?sellerpreview=1",
     "image": "/product/Accessories/growout-net.webp",
-    "meta":{  
-      "title": "Aquaculture HDPE Grow Out Net 7.5X4X4 for Fish Farming",
-      "description": "Buy HDPE Grow Out Net 7.5X4X4 for fish farming. Durable, UV-stabilized netting for aquaculture cage farming. Affordable fish cage net price.",
+    "meta": {
+      "title": "Aquaculture HDPE Grow Out Net (7.5x4x4) for Fish Farming",
+      "description": "Buy HDPE Grow Out Net (7.5x4x4) for fish farming. Durable, UV-stabilized netting for aquaculture cage farming. Affordable fish cage net prices."
     }
   },
   {
-    "id": 13,
+    "id": 15,
     "title": "HDPE Grow Out Net 20X20X4.5",
     "slogan": "HDPE Grow Out Net 20X20X4.5",
     "material": "HDPE Net",
@@ -366,13 +369,13 @@ const productDetailsData = [
     "longDescription3": "Durability – Manufactured with high-density polyethylene (HDPE) for long-lasting performance. UV Protection – Resistant to sun damage and seawater corrosion. Safe for Fish – Knotless design prevents injuries to fish. Optimal Size – Standard size of 20X20X4.5 ensures easy setup in aquaculture cages. Cost-Effective – Competitive fish farming net price for commercial and small-scale farmers.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-growout-nets-20x20x4-5-2856619739309.html?sellerpreview=1",
     "image": "/product/Accessories/growout-net.webp",
-    "meta":{
-      "title": "Aquaculture HDPE Grow Out Net 20X20X4.5 | Fish Cage Nets",
-      "description": "Buy durable Aquaculture HDPE Grow Out Net 20X20X4.5 for fish farming. Affordable fish cage net price with UV-stabilized HDPE material for aquaculture.",
+    "meta": {
+      "title": "Aquaculture HDPE Grow Out Net (20x20x4.5) | Fish Cage Nets",
+      "description": "Buy durable Aquaculture HDPE Grow Out Net (20x20x4.5) for fish farming. Affordable price with UV-stabilized HDPE material for aquaculture."
     }
   },
   {
-    "id": 14,
+    "id": 16,
     "title": "HDPE Bird Net 6X4X4",
     "slogan": "HDPE Bird Net 6X4X4",
     "material": "HDPE Net",
@@ -391,13 +394,13 @@ const productDetailsData = [
     "longDescription3": "The HDPE Bird Net 6X4X4 is a square-shaped fish farming net made of high-density polyethylene (HDPE). It is designed for net cage fish farming, where fish are raised in controlled environments. The netting is UV stabilized, corrosion-resistant, and highly durable, making it suitable for both freshwater and marine aquaculture systems.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-bird-protection-nets-6x4x4-2856619773655.html?sellerpreview=1",
     "image": "/product/Accessories/Bird-protection-net01.webp",
-    "meta":{
-      "title": "Aquaculture Cage Bird Nets 6X4X4 for Fish Farming",
-      "description": "Buy high-quality aquaculture HDPE Bird Net 6X4X4 for fish farming cages. Learn price, benefits & uses of durable netting for aquaculture.",
+     "meta": {
+      "title": "Aquaculture Cage Bird Nets (6x4x4) for Fish Farming",
+      "description": "Buy high-quality aquaculture HDPE Bird Net (6x4x4) for fish farming cages. Learn price, benefits & uses of durable netting for aquaculture."
     }
   },
   {
-    "id": 14,
+    "id": 17,
     "title": "HDPE Bird Net 7.5X4X4",
     "slogan": "HDPE Bird Net 7.5X4X4",
     "material": "HDPE Net",
@@ -416,13 +419,13 @@ const productDetailsData = [
     "longDescription3": "Aquaculture is one of the fastest-growing sectors in food production, and reliable netting solutions are essential for successful fish farming. The Aquaculture HDPE Bird Net 7.5X4X4 is a widely used option for cage culture, providing strength, durability, and affordability. Farmers searching for fish cage nets, aquaculture nets, or fish farming nets often prefer HDPE nets because they are UV-resistant, lightweight, and long-lasting. In this article, we will discuss the benefits, applications, and fish cage net price of HDPE netting for aquaculture.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cages-bird-protection-nets-7-5x4x4-2856619773733.html?sellerpreview=1",
     "image": "/product/Accessories/Bird-protection-net01.webp",
-    "meta":{
-      "title": "Aquaculture HDPE Bird Net 7.5X4X4 for Fish Farming",
-      "description": "Buy Aquaculture HDPE Bird Net 7.5X4X4 for fish farming. Durable fish cage nets, affordable price, and long-lasting netting for aquaculture & breeding.",
+    "meta": {
+      "title": "Aquaculture HDPE Bird Net (7.5x4x4) for Fish Farming",
+      "description": "Buy Aquaculture HDPE Bird Net (7.5x4x4) for fish farming. Durable fish cage nets, affordable price, and long-lasting netting for aquaculture & breeding."
     }
   },
   {
-    "id": 15,
+    "id": 18,
     "title": "HDPE Bird Net 20X20X5",
     "slogan": "HDPE Bird Net 20X20X5",
     "material": "HDPE Net",
@@ -441,13 +444,13 @@ const productDetailsData = [
     "longDescription3": "Aquaculture is growing rapidly, and one of the most important tools for modern fish farming is the Aquaculture HDPE Bird Net 20X20X5. Farmers use these strong fish farming nets to protect their stock from predators and ensure safe breeding conditions. Choosing the right fish cage net not only prevents bird attacks but also enhances water flow and fish health. This article explains the benefits, features, and prices of HDPE fish cage nets for aquaculture projects.",
     "link": "https://www.indiamart.com/proddetail/aquaculture-cage-bird-protection-net-20x20x4-5-2856814726633.html?sellerpreview=1",
     "image": "/product/Accessories/Bird-protection-net01.webp",
-    "meta":{
-      "title": "HDPE Bird Net 20X20X5 for Fish Farming Cages",
-      "description": "Buy durable Aquaculture HDPE Bird Net 20X20X5 for fish cage farming. Strong, UV-stabilized fish farming nets at the best price.",
+    "meta": {
+      "title": "HDPE Bird Net (20x20x5) for Large Fish Farming Cages",
+      "description": "Buy durable Aquaculture HDPE Bird Net (20x20x5) for large-scale fish cage farming. Strong, UV-stabilized fish farming nets at the best price."
     }
   },
   {
-    "id": 15,
+    "id": 19,
     "title": "HDPE Nut and Bolt",
     "slogan": "HDPE Nut and Bolt",
     "material": "HDPE Nut and Bolt",
@@ -466,13 +469,13 @@ const productDetailsData = [
     "longDescription3": "The term nut bolt refers to one of the most common mechanical fasteners used across industries. From nut and bolt sets in heavy construction to plastic bolt and plastic nut and bolt fasteners used in electronics and corrosive environments, the right fastener matters. HDPE plastic nut bolt options offer lightweight, chemical-resistant solutions where metallic corrodes. This guide delves into types, benefits, and manufacturer insights while optimizing for search terms related to nut bolt, plastic fasteners, and HDPE bolt solutions.",
     "link": "https://www.indiamart.com/star-suppliers-bilaspur/products.html",
     "image": "/product/Accessories/nut-bolt.webp",
-    "meta":{
-      "title": "Nut Bolt & HDPE Plastic Nut | HDPE Fasteners",
-      "description": "Discover types of nut bolt, HDPE nut and bolt, and HDPE HDPE fasteners. Explore benefits, manufacturers, and buying guide here.",
+    "meta": {
+      "title": "HDPE Nut and Bolt | Corrosion-Resistant Plastic Fasteners",
+      "description": "Discover durable and corrosion-resistant HDPE nuts and bolts. The perfect plastic fasteners for aquaculture, marine, and industrial applications."
     }
   },
   {
-    "id": 16,
+    "id": 20,
     "title": "HDPE Center Pin",
     "slogan": "HDPE Center Pin",
     "material": "HDPE Center Pin",
@@ -491,13 +494,13 @@ const productDetailsData = [
     "longDescription3": "The term nut bolt refers to one of the most common mechanical fasteners used across industries. From nut and bolt sets in heavy construction to plastic bolt and plastic nut and bolt fasteners used in electronics and corrosive environments, the right fastener matters. HDPE plastic nut bolt options offer lightweight, chemical-resistant solutions where metallic corrodes. This guide delves into types, benefits, and manufacturer insights while optimizing for search terms related to nut bolt, plastic fasteners, and HDPE bolt solutions.",
     "link": "https://www.indiamart.com/star-suppliers-bilaspur/products.html",
     "image": "/product/Accessories/center-pin.webp",
-    "meta":{
-      "title": "Nut Bolt & HDPE  Nut | HDPE Fasteners",
-      "description": "Discover types of nut bolt, HDPE nut and bolt, and HDPE HDPE fasteners. Explore benefits, manufacturers, and buying guide here.",
+    "meta": {
+      "title": "HDPE Center Pin for Modular Floating Docks | Star Suppliers",
+      "description": "Secure your floating structures with our durable HDPE Center Pins. Corrosion-resistant and easy to install for docks, pontoons, and aquaculture platforms."
     }
   },
   {
-    "id": 17,
+    "id": 21,
     "title": "HDPE Railings",
     "slogan": "HDPE Railings",
     "material": "HDPE Railings",
@@ -516,13 +519,13 @@ const productDetailsData = [
     "longDescription3": "When it comes to safe and long-lasting marine infrastructure, HDPE Railing is one of the most reliable solutions. Whether it’s for cage railing in aquaculture farms or jetty railing in waterfront projects, HDPE (High-Density Polyethylene) has become the preferred choice. Its durability, UV resistance, and low maintenance make it an excellent alternative to traditional steel or wooden railings.",
     "link": "https://www.indiamart.com/proddetail",
     "image": "/product/Accessories/hdpe-railing.webp",
-    "meta":{
-      "title": "HDPE Railing for Cages & Jetties | Durable HDPE Railing",
-      "description": "Discover durable HDPE railing for cage farming and jetties. Safe, lightweight, and long-lasting HDPE railing for aquaculture and waterfront projects.",
+    "meta": {
+      "title": "Durable HDPE Railing for Aquaculture Cages & Jetties",
+      "description": "Discover safe and long-lasting HDPE railings for cage farming and jetties. A lightweight, durable solution for aquaculture and waterfront projects."
     }
   },
   {
-    "id": 18,
+    "id": 22,
     "title": "Stainless Steel Railings",
     "slogan": "Stainless Steel Railings",
     "material": "Stainless Steel Railings",
@@ -541,9 +544,9 @@ const productDetailsData = [
     "longDescription3": "Aquaculture and mariculture projects require strong, safe, and long-lasting infrastructure. Stainless steel railings for aquaculture cages and floating jetties are the preferred choice for ensuring safety and durability in harsh marine environments. Unlike mild steel or wooden structures, stainless steel (SS 304/316 grade) railings resist rust, corrosion, and saltwater damage, making them an essential component for fish farmers and marine tourism operators.",
     "link": "https://www.indiamart.com/proddetail/stainless-steel-railings-for-aquaculture-cages-jetties-2856619774083.html?sellerpreview=1",
     "image":"/product/Accessories/ss.webp",
-    "meta":{
+    "meta": {
       "title": "Stainless Steel Railings for Aquaculture Cages & Jetties",
-      "description": "Durable stainless steel railings for aquaculture cages & floating jetties. Corrosion-resistant, safe, and ideal for Aquaculture environments.",
+      "description": "Durable stainless steel railings for aquaculture cages & floating jetties. Corrosion-resistant, safe, and ideal for demanding marine environments."
     }
   },
 ]

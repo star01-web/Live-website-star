@@ -1,5 +1,5 @@
 import React, { useEffect, useState, lazy, Suspense } from "react";
-import { AnimatePresence } from "framer-motion";
+import { AnimatePresence,motion } from "framer-motion";
 import { useNavigate, Link } from "react-router-dom";
 import Hero01 from "./Hero01";
 import '../main.css'
@@ -162,8 +162,9 @@ const handleSubmit = async (e) => {
 
         <div className="absolute inset-0 flex flex-col justify-center items-start text-white p-4 sm:p-6 md:p-10 bg-black/30">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-montserrat font-bold drop-shadow-lg">
-            Unleash Aquatic Excellence with our <br />
-            Premium Aquaculture Fish Farming Cage
+            {/* Unleash Aquatic Excellence with our <br />
+            Premium Aquaculture Fish Farming Cage */}
+            Star Multiventure- India's Leading <br/>Aquaculture Solutions Provider
           </h1>
           <button
             className="mt-2 sm:mt-4 bg-yellow-400 text-black px-4 py-2 sm:px-6 sm:py-3 rounded-lg font-bold hover:bg-yellow-500 transition"
@@ -286,11 +287,11 @@ const handleSubmit = async (e) => {
               India's Leading Aquaculture Equipment Manufacturer
             </h2>
               <p className="text-md text-gray-700 leading-relaxed mb-8">
-                At Star Multiventure Pvt. Ltd., we don&apos;t just build HDPE fish farming cages, floating jetties, and pontoon systems — we build trust with every solution we deliver. With over 10 years of hands-on experience in the aquaculture space, we&apos;ve been working closely with fish farmers across India to make their operations more sustainable, efficient, and profitable. Our equipment is built to last, designed to thrive in tough marine conditions, and crafted to support the growing dreams of India&apos;s blue economy.
+                Welcome to Star Suppliers, the top choice for complete <b>aquaculture solutions in India</b>. Whether you're starting a new project or upgrading your facility, we provide high-quality <b>fish farming equipment</b>—from advanced <b>cage culture</b> systems to durable <b>HDPE pontoons</b>—all designed for maximum growth and efficiency.At Star Multiventure Pvt. Ltd., we don't just build equipment; we build trust. With over 10 years of hands-on experience, we work closely with fish farmers across India to make their operations more sustainable and profitable. Our equipment is built to last, designed to thrive in tough marine conditions, and crafted to support the growing dreams of India's blue economy.
               </p>
             <div className="flex flex-wrap justify-center gap-4 ">
               <Link to="/products" className="bg-[#f1b400] text-black  px-6 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300">
-                Explore Our Products
+                Explore Our Aquaculture Solutions
               </Link>
               <Link to="/services" className="bg-[#f1b400] text-black  px-6 py-3 rounded-lg hover:bg-black hover:text-white transition duration-300">
                 Our Services
